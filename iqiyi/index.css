@@ -1,0 +1,155 @@
+/*通用css*/
+*{
+    box-sizing:border-box;
+}
+body{
+    font-size:14px;
+    font-family:"microsoft yahei";
+}
+ul,li,p,body{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.lf{
+    float:left;
+}
+.rf{
+    float:right;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+a{
+    text-decoration:none;
+}
+/*倒三角*/
+.caret{
+    display:inline-block;
+    width:0;
+    height:0;
+    margin-left:5px;
+    vertical-align:middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+/*圆红点点*/
+.circle{
+    display:inline-block;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#F45910;
+    vertical-align:super;
+    margin-bottom:4px;
+}
+/*头部*/
+#header{
+    width:100%;
+    margin:0 auto;
+}
+/*导航条*/
+#navbar{
+    padding:5px 20%;
+    background:#222222;
+    text-align:center;
+    height:58px;
+}
+/*导航条的logo*/
+#navbar .logo>.top>span{
+    color:#5AA700;
+    font-size:20px;
+}
+/*logo的图片*/
+#navbar .logo>.top{
+    display:flex;
+    align-items:center;
+}
+#navbar .logo>.top>img{
+    margin-right:5px;
+}
+/*logo下面的文字*/
+#navbar .logo>.bottom{
+    font-size: 10px;
+    color:#666666;
+    display:flex;
+    justify-content:space-between;
+}
+/*中间的搜索框*/
+#navbar .search{
+    margin-left:100px;
+}
+#navbar .search input{
+    height:30px;
+    width:300px;
+    margin-top:9px;
+    padding:5px;
+    border:1px solid #5AA700;
+    border-right:none;
+    outline:none;
+}
+/*搜索框的按钮*/
+#navbar .search button{
+    height:30px;
+    margin-top:9px;
+    border:1px solid #5AA700;
+    border-top:1px solid #70D05D;
+    width:100px;
+    background-image:linear-gradient(to bottom,#62B403,#579E03);
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+/*搜索按钮里面的图标*/
+#navbar .search button span{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background:url("../img/background.png");
+}
+/*导航栏中的标签页*/
+#navbar .nav-tab li{
+    float:left;
+    color:#fff;
+    line-height:50px;
+    margin-left:15px;
+}
+#navbar .nav-tab li a{
+    color:#fff;
+}
+
+/*中间大幅图片的部分*/
+#header>.pic{
+    position:relative;
+    height:410px;
+    padding:0 20%;
+
+}
+#header>.pic ul{
+    position:absolute;
+    right:20%;
+    top:0;
+    background:#1D1C1C;
+    border:2px solid #68614C;
+    border-radius:5px;
+    margin-top:53px;
+}
+#header>.pic ul li{
+
+}
+#header>.pic ul li:hover a{
+    background:#63B504;
+}
+#header>.pic ul li a{
+    display:inline-block;
+    color:#FBFEF7;
+    border-bottom:1px solid #373532;
+    padding:5px 15px;
+}

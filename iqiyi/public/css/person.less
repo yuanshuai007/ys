@@ -1,0 +1,463 @@
+/*通用css*/
+@color-core:#699F00;
+* {
+    box-sizing: border-box;
+}
+ul, li, p, body,dl,dt,dd{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    font: 14px/1.5 Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+}
+.container{
+    width:970px;
+    margin:0 auto;
+}
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+img{
+    vertical-align:bottom;
+}
+//带小图标的title
+.b-title{
+    b{
+        display:inline-block;
+        width:40px;
+        height:36px;
+        background:url(../img/help/icon-help.png) 0 -50px;
+    }
+    span{
+        vertical-align: top;
+        font-size: 20px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .rf{
+        color:#5FA92A;
+    }
+}
+//图文混排
+.mix{
+    b{
+        display:inline-block;
+        width:26px;
+        height:26px;
+        background:url(../img/person/vipfocusIndividual.png) ;
+    }
+    span{
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 2.5px;
+        margin-left: 5px;
+    }
+}
+//人物
+.figure{
+    margin-top:15px;
+    div.figure-left{
+        width:80px;
+        height:80px;
+        margin-right:20px;
+        >img{
+            width:100%;
+            height:100%;
+        }
+    }
+    div.figure-right{
+        width:170px;
+        font-size: 12px;
+        cursor:pointer;
+        div+div{
+            margin-top:4px;
+        }
+        div:nth-child(1){
+            //进圈子
+            b{
+                display:none;
+                padding: 3px 10px;
+                background: #6AA826;
+                color: #fff;
+                border-radius: 5px;
+                margin-top: -3px;
+            }
+        }
+        div:nth-child(2){
+            b{
+                vertical-align: -2px;
+                display:inline-block;
+                height: 13px;
+                width:14px;
+                margin-right:5px;
+            }
+            b:nth-child(1){
+                background:url(../img/person/paopao-landingpage.png) -80px -220px;
+            }
+            span:nth-child(2){
+                margin-right: 10px;
+            }
+            b:nth-child(3){
+                background:url(../img/person/paopao-landingpage.png) 0 -240px;
+            }
+        }
+        div:nth-child(3){
+            height:40px;
+            overflow:hidden;
+            color: #929190;
+        }
+    }
+    div.figure-right:hover div:nth-child(1) b{
+        display:block;
+    }
+    div.figure-right:hover div:nth-child(1) span{
+        color:#5BA702;
+    }
+}
+/*导航条*/
+#navbar {
+    background: #222222;
+    text-align: center;
+    height: 46px;
+    width:100%;
+    .logo{
+        margin-top:4px;
+    }
+
+}
+#navbar .search input {
+    height: 30px;
+    width: 230px;
+    padding: 5px;
+    border:1px solid #5AA700;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    background:#E3E3E3;
+    outline:none;
+}
+#navbar .search input:hover{
+    background:#fff;
+}
+#navbar .search input:focus{
+    background:#fff;
+}
+/*搜索框的按钮*/
+#search{
+    margin-top: 8px;
+    margin-left: 161px;
+    >div{
+        width:36px;
+        height:30px;
+        background:url(../img/help/srch_btn-new.png);
+    }
+}
+
+/*导航栏中的标签页*/
+#navbar .nav-tab li {
+    float: left;
+    color: #fff;
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+#navbar .nav-tab li a {
+    color: #fff;
+    cursor:pointer;
+}
+
+//个人介绍
+#person{
+    background:#DBEFA8;
+    //隐藏类
+    .hidden{
+        display:none;
+    }
+    >.bg{
+        width:1419px;
+        height:260px;
+        margin:0 auto;
+        background:url(../img/person/paopaoTrends_individualBg.jpg);
+    }
+    .container{
+        padding-top:20px;
+        text-align:center;
+        //头像
+        .head-pic{
+            margin:0 auto;
+            width:90px;
+            height:90px;
+            position:relative;
+            img{
+                width:100%;
+                height:100%;
+                border-radius: 50%;
+            }
+            input{
+                cursor:pointer;
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                border-radius: 50%;
+                overflow:hidden;
+                opacity:0;
+            }
+        }
+        //用户名
+        #username{
+            color:@color-core;
+            font-size:18px;
+            margin:20px 0;
+        }
+        //个性签名
+        .signature{
+            span{
+                margin-left: 12.5px;
+            }
+            b{
+                margin-top: 3.5px;
+                vertical-align: top;
+                display:inline-block;
+                margin-left:10px;
+                cursor:pointer;
+                width:15px;
+                height:14px;
+                background:url(../img/person/paopao-landingpage.png) -80px -180px;
+            }
+        }
+        //输入
+        .input{
+            margin-top:20px;
+            margin-left:344px;
+            text-align:left;
+            position:relative;
+            //计数
+            #count{
+                position:absolute;
+                right:347px;
+                top:0;
+            }
+            input{
+                width:282px;
+                height:27px;
+                border:1px solid #B9D476;
+                margin-right:10px;
+                vertical-align: top;
+                padding-left:5px;
+            }
+            span{
+                padding:3px 10px;
+                border-radius:5px;
+                cursor:pointer;
+                display:inline-block;
+            }
+            .save{
+                background:#B2B2B2;
+                color:#fff;
+                margin-right:10px;
+            }
+            .cancel{
+                background:#fff;
+                color:#5AA700;
+            }
+        }
+    }
+}
+
+//标题
+#title{
+    background:#F5F5F5;
+    .container{
+        padding:0 220px;
+        >div{
+            width:80px;
+            height:40px;
+            line-height:40px;
+            float:left;
+            text-align:center;
+            font-size:18px;
+            cursor:pointer;
+            border-bottom:2px solid transparent;
+        }
+        div:hover{
+            color:#5EAA08;
+            border-bottom:2px solid #5AA700;
+        }
+        div+div{
+            margin-left:70px;
+        }
+    }
+}
+
+//主体内容
+#main{
+    margin-top:20px;
+    margin-bottom:30px;
+    //动态
+    .dynamic{
+        .left{
+            width:660px;
+            margin-right:40px;
+            .title{
+                padding-bottom:20px;
+                border-bottom:1px solid #ddd;
+                b{
+                    display:inline-block;
+                    height:25px;
+                    width:5px;
+                    background:#5AA700;
+                    vertical-align: top;
+                }
+                span{
+                    font-size: 18px;
+                    margin-left: 8px;
+                    display: inline-block;
+                }
+            }
+            .main{
+                text-align:center;
+                margin-top:200px;
+            }
+        }
+        .right{
+            width:270px;
+            .vip{
+                border:1px solid #D4AF85;
+                background:#FFFBF6;
+                border-radius:5px;
+                padding:20px;
+                color:#929190;
+                margin-bottom:30px;
+                >div+div{
+                    margin-top:15px;
+                }
+                //开通VIP
+                >div:nth-child(2){
+                    background:#C8A06A;
+                    text-align:center;
+                    color:#fff;
+                    padding:5px 0;
+                    font-size:18px;
+                    border-radius:5px;
+                }
+                //图文混排
+                .pic-words-1{
+                    >div.rf{
+                        b{
+                            background:url(../img/person/vipfocusIndividual.png) -40px 0;
+                        }
+                    }
+                }
+                .pic-words-2{
+                    >div.lf{
+                        b{
+                            background:url(../img/person/vipfocusIndividual.png) -80px 0;
+                        }
+                    }
+                    >div.rf{
+                        b{
+                            background:url(../img/person/vipfocusIndividual.png) -120px 0;
+                        }
+                    }
+                }
+            }
+            .circle{
+                .title{
+                    padding-bottom:20px;
+                    border-bottom:1px solid #ddd;
+                    b{
+                        display:inline-block;
+                        height:25px;
+                        width:5px;
+                        background:#5AA700;
+                        vertical-align: top;
+                    }
+                    span{
+                        font-size: 18px;
+                        margin-left: 8px;
+                        display: inline-block;
+                    }
+                    div{
+                        margin-top: 3.5px;
+                        i{
+                            display:inline-block;
+                            vertical-align: top;
+                            height: 14px;
+                            margin-top: 3.5px;
+                            margin-right:5px;
+                            width:14px;
+                            background:url(../img/person/paopao-landingpage.png) -60px -160px;
+                        }
+                        em{
+                            font-style:normal;
+                        }
+                    }
+                }
+                div.figure{
+                    margin-top:20px;
+                }
+            }
+        }
+    }
+    .praise{
+        display:none;
+        height:324px;
+        line-height:324px;
+        text-align: center;
+        color: #929190;
+        font-size:20px;
+        img{
+            vertical-align: middle;
+            margin-right:20px;
+        }
+
+    }
+    .take{
+        .praise;
+    }
+    .upload{
+        .praise;
+    }
+}
+
+//底部
+#footer{
+    border-top:1px solid #aaa;
+    margin:30px 0;
+
+    .container{
+        width:970px;
+        margin:0 auto;
+        text-align:center;
+        ul{
+            margin:30px 0 15px 215px;
+            li{
+                width:90px;
+                float:left;
+                b{
+                    border-right:1px solid #aaa;
+                    margin-left:10px;
+                }
+            }
+        }
+        div{
+            color:#999999;
+        }
+    }
+}

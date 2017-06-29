@@ -1,0 +1,6 @@
+一.关于访问html路径的问题
+    1.静态中间件:设置网站的根目录
+    app.use(express.static('../public'));
+    就是讲public设置成根目录
+    所以即使重定位也是要在根目录下找
+    res.redirect("/html/index.html");

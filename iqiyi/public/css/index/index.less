@@ -1,0 +1,719 @@
+//通用css
+@import "public.less";
+//综艺的css
+@import "variety.less";
+//其他的css
+@import "another.less";
+/*导航条*/
+#navbar {
+    >.container{
+        padding: 5px 0;
+        width:1380px;
+        background: #222222;
+    }
+    background: #222222;
+    text-align: center;
+    height: 58px;
+    width:100%;
+
+}
+
+//给js添加的导航条css
+.js-navbar-start{
+    z-index:100;
+    top:0;
+    left:0;
+    position:fixed;
+    animation:my-animation 0.5s linear ;
+}
+
+//定义透明度动画
+@keyframes my-animation{
+    0%{
+        opacity:0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+/*导航条的logo*/
+#navbar .logo > .top > span {
+    color: #5AA700;
+    font-size: 20px;
+}
+
+/*logo的图片*/
+#navbar .logo > .top {
+    display: flex;
+    align-items: center;
+}
+
+#navbar .logo > .top > img {
+    margin-right: 5px;
+}
+
+/*logo下面的文字*/
+#navbar .logo > .bottom {
+    font-size: 10px;
+    color: #666666;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*中间的搜索框*/
+#navbar .search {
+    position:relative;
+    margin-left: 220px;
+    //下面的热门搜索
+    >ul{
+        position:absolute;
+        display:none;
+        z-index:100;
+        width:462px;
+        left:0;
+        top:44px;
+        border:1px solid @color-core;
+        background:#F2F2F2;
+        >li{
+            text-align:left;
+            span{
+                padding:1px 6px;
+                border-radius:3px;
+                background:@color-core;
+                font-style:normal;
+                color:#fff;
+                margin-right:5px;
+            }
+            >a{
+
+            }
+
+            padding:10px;
+        }
+        li:hover{
+            background:#fff;
+        }
+        //历史搜索
+        li:first-child{
+            display:none;
+        }
+    }
+}
+
+#navbar .search input {
+    height: 36px;
+    width: 462px;
+    margin-top: 9px;
+    padding: 5px;
+    border:1px solid #5AA700;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    background:#E3E3E3;
+    outline:none;
+}
+#navbar .search input:hover{
+    background:#fff;
+}
+#navbar .search input:focus{
+    background:#fff;
+}
+/*搜索框的按钮*/
+#navbar .search button {
+    border:none;
+    outline:none;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+    height: 36px;
+    margin-top: 9px;
+    width: 110px;
+    background-image: linear-gradient(#62B403, #579E03);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    line-height:36px;
+    font-family:"Tahoma";
+    font-weight:400;
+    >span:first-child{
+        float:left;
+        margin-top:10px;
+        margin-left:10px;
+        width: 15px;
+        height: 15px;
+        background: url("../../img/background.png");
+    }
+}
+
+/*导航栏中的标签页*/
+#navbar .nav-tab li {
+    float: left;
+    color: #fff;
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+//导航栏右边的按钮
+#button{
+    >li:first-child{
+        cursor: pointer;
+        .text-hidden{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display:block;
+            width: 67px;
+            text-align: right;
+        }
+    }
+}
+
+#button li:hover{
+    color:#89C703;
+}
+#navbar #button li a:hover{
+    color:#89C703;
+}
+#navbar #button li .person-center a{
+    color:#89C703;
+}
+#navbar .nav-tab li a {
+    color: #fff;
+    cursor:pointer;
+}
+
+//登录按钮的下拉菜单
+#button li:first-child{
+    position:relative;
+    >ul{
+        display:none;
+        z-index:500;
+        position:absolute;
+        top:53px;
+        left:-15px;
+        width:100px;
+        background:#222222;
+        color:#fff;
+        li{
+            width:100%;
+            cursor:pointer;
+            text-align:center;
+            margin:0;
+        }
+    }
+}
+
+/*中间大幅图片的部分*/
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#banner{
+    position:relative;
+    height:410px;
+    text-align:center;
+    >div{
+        margin-left:-750px;
+        position:absolute;
+        left:50%;
+        top:0;
+        opacity:0;
+        transition:all 0.3s linear;
+    }
+    .active{
+        opacity:1;
+        z-index:10;
+    }
+}
+
+#header{
+    height:410px;
+
+    background:#000;
+    font-family:Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+    .container{
+        background: #000;
+        position:relative;
+        margin:0 auto;
+        height:410px;
+    }
+}
+
+#header  ul {
+    padding:2px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #1D1C1C;
+    border: 2px solid #68614C;
+    border-radius: 5px;
+    margin-top: 23px;
+    z-index:20;
+}
+
+#header  ul li a.select {
+    background: #63B504;
+    color:#fff;
+    transition:all 0.5s linear;
+}
+
+#header  ul li a {
+    width:218px;
+    display: inline-block;
+    color: #ccc;
+    border-bottom: 1px solid #373532;
+    padding: 8px 0 8px 15px;
+}
+#header ul li:last-child a{
+    border:none;
+}
+//头部最下面的分类部分
+#fenlei {
+    background: #010101;
+    >div{
+        padding: 10px 0;
+        background: #010101;
+        > ul {
+            border:2px solid #396900;
+            border-radius:5px;
+            > li {
+                float: left;
+                //每个竖着的小块
+                >ul{
+                    //最后一级li
+                    >li{
+                        margin:10px 24px;
+                        a{
+                            color:#fff;
+                        }
+                    }
+                }
+                >ul.border{
+                    position:relative;
+                    li:last-child{
+                        width:1px;
+                        height:100%;
+                        position:absolute;
+                        right:1px;
+                        top:0px;
+                        background-image:linear-gradient(to bottom,#1D2601 0%,#4A6300 50%,#1D2601 100%);
+                        margin:0;
+
+                    }
+                }
+            }
+            >li:last-child{
+                text-align:center;
+                margin:17px 0 0 30px;
+                img{
+
+                }
+                p{
+                    margin-top:10px;
+                    >a{
+                        color:#fff;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+//中间的主体部分
+#body{
+    background:#fff;
+}
+//焦点部分
+#focus {
+    margin: 20px 0;
+    //左边
+    > .left {
+        width: 379px;
+        //左边的上面
+        > .title {
+            position: relative;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #699F00;
+            > .lf {
+                color: #699F00;
+                b {
+                    font-size: 25px;
+                    font-weight: normal;
+                }
+                span {
+                    margin-left: 5px;
+                }
+            }
+            > .rf {
+                position: relative;
+                margin-right: 24px;
+                span {
+                    font-size: 15px;
+                    display: inline-block;
+                    padding: 5px 5px 5px 20px;
+                    border: 1px solid #ddd;
+                    border-left: none;
+                    border-right: none;
+                    position: relative;
+                    z-index: 100;
+                    background: #fff;
+                }
+                //圆形
+                > div {
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    border: 1px solid #ddd;
+                    top: 0;
+                    left: -15px;
+                }
+                > div:first-child {
+                    top: 0;
+                    left: -15px;
+                }
+                > div:nth-child(3) {
+                    top: 0;
+                    left: 40px;
+                }
+                > p {
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    top: 8px;
+                    left: 0;
+                    background: url(../../img/background.png) -20px 0;
+                    z-index: 200;
+                }
+            }
+        }
+        //左边的中间
+        > .body {
+            margin: 20px 0;
+            color: #000;
+            > h2 {
+                font-weight: normal;
+                text-align: center;
+            }
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    a {
+                        color: #000;
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        }
+        //左边的下面
+        > .pic {
+            dd {
+                padding: 5px;
+                background: #F2F2F2;
+            }
+            dt{
+                width:180px;
+                height:101px;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+    //中间
+    > .center {
+        margin: 0 20px;
+        //上面的图片
+        > div {
+            position: relative;
+            overflow:hidden;
+            width:380px;
+            height:252px;
+            .previous,.next{
+                cursor:pointer;
+            }
+            >.information{
+                width:100%;
+                color:#fff;
+               background:#000;
+                opacity:0.8;
+                position:absolute;
+                bottom:0;
+                padding:5px 10px;
+                >p{
+                    opacity:0;
+                    transition:all 0.3s linear;
+                    margin-top:4px;
+                    position:absolute;
+                    left:60px;
+                    >a{
+                        color:#fff;
+                    }
+                }
+                .visible{
+                    opacity:1;
+                }
+            }
+        }
+        //下面的文字列表
+        > ul {
+            margin-top: 25px;
+            > li {
+                .middle;
+                margin-bottom: 12px;
+                font-size: 15px;
+            }
+        }
+    }
+    //右边
+    >.right{
+        width:581px;
+      >dl{
+          float:left;
+          margin-bottom:14px;
+          dt{
+              width:180px;
+              height:101px;
+              img{
+                  width:100%;
+                  height:100%;
+              }
+          }
+          >dd{
+              background:#F2F2F2;
+              padding:6px 10px;
+          }
+      }
+      >dl.distance{
+          margin-left:21px;
+          margin-right:20px;
+      }
+    }
+    //轮播图
+    .banner_img{
+        width:760px;
+        position:absolute;
+        left:0;
+        top:0;
+        >div{
+            float:left;
+        }
+    }
+}
+
+//返回顶部
+#return{
+    .return-top{
+        margin:0 auto;
+        width:42px;
+        height:42px;
+        background:url(../../img/bg/baseScrollBarv4_20170217.png) 0 -20px;
+        cursor:pointer;
+    }
+    .words{
+        text-align:center;
+        color:#999999;
+        cursor:pointer;
+        font-size:10px;
+        margin-top:5px;
+    }
+    .return-top-pa:hover .return-top{
+        background:url(../../img/bg/baseScrollBarv4_20170217.png) -60px -20px;
+    }
+    .return-top-pa:hover .words{
+        color:@color-core;
+    }
+    //意见反馈
+    .suggest{
+        margin-top:10px;
+        .pic{
+            .return-top;
+            background:url(../../img/bg/baseScrollBarv4_20170217.png) 0 -80px;
+        }
+    }
+    .suggest:hover .pic{
+        background:url(../../img/bg/baseScrollBarv4_20170217.png) -60px -80px;
+    }
+    .suggest:hover .words{
+        color:@color-core;
+    }
+}
+.return{
+    position:fixed;
+    transition:all 0.7s linear;
+    right:50px;
+    bottom:20px;
+    opacity:0;
+    overflow:hidden;
+    width:60px;
+    height:0;
+}
+.return-top-click{
+    opacity:1;
+    height:200px;
+}
+
+//个人中心
+#person{
+    display:none;
+    position:absolute;
+    z-index:500;
+    top:54px;
+    left:0;
+    .title{
+        width:420px;
+        height:80px;
+        background:#222222 url(../../img/bg/personCenterMiniPop.png) 0 -109px;
+        //小三角
+        b{
+            top: -16px;
+            left: 202px;
+            position:absolute;
+            width:0;
+            height:0;
+            border:8px solid transparent;
+            border-bottom-color:#DAF0C0;
+        }
+        .left{
+            width:55px;
+            height:55px;
+            margin:12.5px 15px 0 15px;
+            img{
+                width:100%;
+                border-radius:50%;
+            }
+
+        }
+        .right{
+            color:#333;
+            line-height:14px;
+            margin-top:21px;
+            text-align:left;
+            a{
+                color:#333;
+            }
+            p{
+                margin-bottom:10px;
+            }
+            span{
+                margin-left:10px;
+                cursor:pointer;
+            }
+        }
+    }
+    //标题的下面
+    .person-bottom{
+        padding:20px;
+        background:#fff;
+        line-height:14px;
+    }
+    //个人中心
+    .person-center{
+       margin-bottom:15px;
+        background:#fff;
+        text-align:left;
+        color:#90C454;
+        cursor:pointer;
+    }
+    .content{
+        //包裹图片和文字的大div
+        .person-pic{
+            float:left;
+            margin-right:46px;
+            cursor:pointer;
+            position:relative;
+            >div{
+                width:60px;
+                height:60px;
+                margin-bottom:10px;
+            }
+            >p{
+                color:#333;
+            }
+            //遮罩层
+            h1{
+                background:#fff;
+                position:absolute;
+                width:60px;
+                height:60px;
+                left:0;
+                top:0;
+                margin:0;
+                opacity:0;
+            }
+        }
+        //给大div添加hover
+        .person-pic:hover p{
+            color:#699F00;
+        }
+        .person-pic:hover h1{
+            opacity:0.5;
+        }
+        >div:nth-child(1){
+            div{
+                background:url(../../img/bg/personCenterMiniPop.png) 0 -200px;
+            }
+        }
+        >div:nth-child(2){
+            div{
+                background:url(../../img/bg/personCenterMiniPop.png) -80px -200px;
+            }
+        }
+        >div:nth-child(3){
+            div{
+                background:url(../../img/bg/personCenterMiniPop.png) -160px -200px;
+            }
+        }
+        >div:nth-child(4){
+            margin-right:0;
+            div{
+                background:url(../../img/bg/personCenterMiniPop.png) -240px -200px;
+            }
+        }
+    }
+}
+
+//电梯楼层
+#lift{
+
+
+    >div{
+        width:60px;
+        height:30px;
+        line-height:30px;
+        border-radius:5px;
+        background:#fff;
+        border:1px solid #ddd;
+        text-align:center;
+        font-size:18px;
+        margin-bottom:20px;
+        cursor:pointer;
+    }
+    >div:hover{
+        background:@color-core;
+        color:#fff;
+    }
+}
+.lift{
+    position:fixed;
+    right:50px;
+    bottom:200px;
+    overflow:hidden;
+    width:60px;
+    height:100px;
+
+
+}
+
+

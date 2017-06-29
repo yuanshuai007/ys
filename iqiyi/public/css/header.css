@@ -1,0 +1,86 @@
+/*通用css*/
+* {
+  box-sizing: border-box;
+}
+ul,
+li,
+p,
+body,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font: 14px/1.5 Tahoma, Helvetica, Arial, "\5FAE\8F6F\96C5\9ED1", sans-serif;
+}
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+.lf {
+  float: left;
+}
+.rf {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  vertical-align: bottom;
+}
+#navbar {
+  background: #222222;
+  text-align: center;
+  height: 46px;
+  width: 100%;
+}
+#navbar .logo {
+  margin-top: 4px;
+}
+#navbar .search input {
+  height: 30px;
+  width: 230px;
+  padding: 5px;
+  border: 1px solid #5AA700;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: #E3E3E3;
+  outline: none;
+}
+#navbar .search input:hover {
+  background: #fff;
+}
+#navbar .search input:focus {
+  background: #fff;
+}
+/*搜索框的按钮*/
+#search {
+  margin-top: 8px;
+  margin-left: 161px;
+}
+#search > div {
+  width: 36px;
+  height: 30px;
+  background: url(../img/help/srch_btn-new.png);
+}
+/*导航栏中的标签页*/
+#navbar .nav-tab li {
+  float: left;
+  color: #fff;
+  line-height: 50px;
+  margin-left: 15px;
+}
+#navbar .nav-tab li a {
+  color: #fff;
+  cursor: pointer;
+}

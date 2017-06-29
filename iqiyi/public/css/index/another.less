@@ -1,0 +1,279 @@
+@color-core:#699F00;
+//登录和注册公用的css
+.login-share{
+        display:none;
+        width:462px;
+        min-height:300px;
+        z-index:350;
+        position:fixed;
+        left:50%;
+        top:30px;
+        margin-left:-251px;
+        div.header{
+            height:55px;
+            text-align:left;
+            font-size:16px;
+            color:#fff;
+            padding-left:20px;
+            background:url(../../img/login/login_bg.png);
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            >div:first-child{
+                font-size: 32px;
+                margin-top: -8px;
+                margin-right: 2px;
+                cursor:pointer;
+            }
+            >div:last-child{
+                line-height:55px;
+            }
+        }
+        form{
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            text-align:center;
+            background:#fff;
+            font-family:"SimSun";
+            padding:30px 0;
+            //表单三段式
+            .form-group{
+                //弹性布局--垂直居中
+                display: flex;
+                align-items: center;
+                >div:nth-child(1){
+                    width:25%;
+                    text-align: right;
+                    span{
+                        padding-right:5px;
+                    }
+                }
+                >div:nth-child(2){
+                    width:50%;
+                    input{
+                        height:28px;
+                        width:100%;
+                    }
+                }
+                >div:nth-child(3){
+                    width:25%;
+                    display: flex;
+                    align-items: center;
+                    b {
+                        margin-left: 5px;
+                        text-align: left;
+
+                    }
+                    i{
+                        font-style: normal;
+                        color:#F87A1F;
+                        padding-left: 5px;
+                    }
+
+                }
+            }
+            input{
+                padding-left:5px;
+            }
+            //第一个和第二个div账号密码
+            >div:first-child{
+                margin-bottom:20px;
+            }
+            .percent{
+                font-size:14px;
+                text-align:left;
+                .percent25{
+                    width:22%;
+                    display:inline-block;
+                    text-align:right;
+                }
+                .percent50{
+                    width:50%;
+                }
+                //第一个和第二个div下的type=text
+                .percent50-12{
+                    width:50%;
+                    height:25px;
+                }
+            }
+
+            >div.password{
+                margin:20px auto;
+                width:50%;
+                text-align: left;
+                input{
+                    margin:0;
+                    margin-top:1.5px;
+                    vertical-align:top;
+                }
+                >div{
+                    float:right;
+                    font-size: 0;
+                    >span,b{
+                        font-size: 14px;
+                    }
+                }
+                b{
+                    border-right:1px solid #aaa;
+                    margin:0 10px;
+                }
+                span{
+                    cursor:pointer;
+                    color:@color-core;
+                }
+            }
+            >div.login{
+                width:50%;
+                margin:0 auto;
+                input{
+                    outline:none;
+                    border:none;
+                    border-radius:5px;
+                    background:@color-core;
+                    color:#fff;
+                    width:100%;
+                    font-size:18px;
+                    padding:5px 0;
+                    cursor:pointer;
+                }
+            }
+
+        }
+}
+//遮罩层
+#zzc{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:#000;
+    opacity:0.5;
+    z-index:300;
+}
+
+#register{
+    >form{
+        font-size: 14px;
+        //提示小图标
+        b{
+            display:inline-block;
+            width:20px;
+            height:19px;
+            vertical-align: middle;
+        }
+        //验证码
+        #auth{
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            >div:nth-child(1){
+                width:25%;
+                text-align: right;
+                span{
+                    padding-right:5px;
+                }
+            }
+            >div:nth-child(2){
+                width:50%;
+                display: flex;
+                align-items: center;
+                >input:nth-child(1){
+                    width:40%;
+                    height:28px;
+                }
+                >canvas:nth-child(2){
+                    //width:35%;
+                   // height:28px;
+                    margin:0 14px;
+                    border:0.5px solid #A9A9A9;
+                }
+                >span:nth-child(3){
+                    width:30px;
+                    height:28px;
+                    border:0.5px solid #A9A9A9;
+                    cursor:pointer;
+                    background:url(../../img/login/thirdLoginIcon.png) -72px -35px;
+                }
+            }
+            >div:nth-child(3){
+                width:25%;
+                display: flex;
+                align-items: center;
+                b {
+                    margin-left: 5px;
+                }
+                i{
+                    font-style: normal;
+                    color:#F87A1F;
+                    padding-left: 5px;
+                }
+
+            }
+
+        }
+        //>div:nth-child(3){
+        //    text-align:left;
+        //    margin:15px 0;
+        //    span:nth-child(1){
+        //        margin-left:55px;
+        //        margin-right:5px;
+        //    }
+        //    input{
+        //        height:26px;
+        //        width:110px;
+        //        line-height: 26px;
+        //    }
+        //    span:nth-child(3),span:nth-child(4){
+        //        display:inline-block;
+        //        border:0.5px solid #A9A9A9;
+        //        height:26px;
+        //        vertical-align: top;
+        //    }
+        //    span:nth-child(3) {
+        //        width: 80px;
+        //        margin: 0 5px;
+        //        font-size: 16px;
+        //        line-height: 26px;
+        //        padding-left:10px;
+        //    }
+        //    //验证码刷新的地方
+        //    span:nth-child(4){
+        //        width:30px;
+        //        cursor:pointer;
+        //        background:url(../../img/login/thirdLoginIcon.png) -72px -36px;
+        //    }
+        //}
+        >div:nth-child(4){
+            width:50%;
+            margin:0 auto;
+            position:relative;
+            input{
+                height: 28px;
+                width: 100%;
+            }
+            span{
+                position:absolute;
+                top: 5px;
+                right:5px;
+                color:@color-core;
+            }
+        }
+        >div:nth-child(5){
+            width:50%;
+            margin:15px auto;
+            span:nth-child(2){
+                margin-left:0;
+                margin-right:7px;
+            }
+            span:nth-child(3){
+               cursor:pointer;
+            }
+        }
+    }
+
+}
+
+
+//电梯楼层
+

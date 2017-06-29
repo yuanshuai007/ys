@@ -1,0 +1,4320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iqiyi</title>
+    <link rel="stylesheet" href="../css/index/index.css">
+    <!--<link rel="stylesheet" href="../css/index/1500.css" media="screen and (max-width:1500px)">-->
+</head>
+<body>
+<!--导航条-->
+<div id="navbar">
+    <div class="container clear">
+        <!--导航条的logo部分-->
+        <div class="logo lf">
+            <!--logo部分的上面-->
+            <div class="top">
+                <img src="../img/logo-little.png" alt="">
+                <span>爱奇艺</span>
+            </div>
+            <!--logo部分的下面-->
+            <div class="bottom">
+                <span>悦</span>
+                <span>享</span>
+                <span>品</span>
+                <span>质</span>
+            </div>
+        </div>
+        <!--搜索部分-->
+        <div class="search lf" id="search">
+            <input type="text" placeholder="功夫瑜伽" class="lf">
+            <ul>
+                <li><a>历史搜索</a></li>
+                <li><a>热门搜索</a></li>
+                <li><a href="#"><span>1</span>三生三世</a></li>
+                <li><a href="#"><span>2</span>古剑奇谭</a></li>
+                <li><a href="#"><span>3</span>金刚2</a></li>
+            </ul>
+            <button type="button" class="lf">
+                <span></span>
+                搜全网
+            </button>
+        </div>
+        <!--按钮部分-->
+        <ul class="nav-tab rf" id="button">
+            <li>
+                <span>登录</span>
+                <!--个人中心-->
+                <div id="person">
+                    <div class="title clear">
+                        <b></b>
+                        <div class="left lf">
+                            <img src="../img/bg/male-70.png" alt="">
+                        </div>
+                        <div class="right lf">
+                            <p class="username">用户名</p>
+                            <div>
+                                <a href="#">立即开通VIP</a>
+                                <a href="#">全站开广告</a>
+                                <a href="#">大片随意看</a>
+                                <span id="exit">退出</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-bottom">
+                        <!--个人中心-->
+                        <div class="person-center">
+                            <a href="person.html" target="_blank">进入个人中心></a>
+                        </div>
+                        <div class="content clear">
+                            <div class="person-pic">
+                                <!--遮罩层-->
+                                <h1></h1>
+                                <div></div>
+                                <p>我的订阅</p>
+                            </div>
+                            <div class="person-pic">
+                                <!--遮罩层-->
+                                <h1></h1>
+                                <div></div>
+                                <p>我的收藏</p>
+                            </div>
+                            <div class="person-pic">
+                                <!--遮罩层-->
+                                <h1></h1>
+                                <div></div>
+                                <p>安全中心</p>
+                            </div>
+                            <div class="person-pic">
+                                <!--遮罩层-->
+                                <h1></h1>
+                                <div></div>
+                                <p>帮助中心</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">开通VIP</a></li>
+            <li><a href="#">上传</a><span class="circle"></span><span class="caret"></span></li>
+            <li><a href="#">下载客户端</a></li>
+            <li><a href="#">消息</a><span class="caret"></span></li>
+            <li><a href="#">播放记录</a><span class="caret"></span></li>
+        </ul>
+    </div>
+</div>
+<!--头部-->
+<div id="header" class="clear">
+    <div class="container">
+        <div id="banner">
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/1.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/2.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/3.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/4.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/5.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/6.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/7.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/8.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/9.jpg" alt="">
+                </a>
+            </div>
+            <div class="active">
+                <a href="play.html">
+                    <img src="../img/banner/10.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <ul id="words_banner">
+            <li><a href="play.html" class="select">择天记：鹿晗演绎逆天改命</a></li>
+            <li><a href="#">外科风云:靳东成二十四孝男友</a></li>
+            <li><a href="#">生化危机终章:女战神手撕丧尸</a></li>
+            <li><a href="#">奇葩说4:宋佳被马东强撩</a></li>
+            <li><a href="#">奔跑吧：林志玲火辣狂撩陈赫</a></li>
+            <li><a href="#">吃光:韩东君澳门遇事故</a></li>
+            <li><a href="#">卧底2：缉毒敢死队绝地反击</a></li>
+            <li><a href="#">路人女王养成方法第二季</a></li>
+            <li><a href="#">音乐大赏:绝对歌神张学友</a></li>
+            <li><a href="#">云巅之上2:娱乐圈宫心计</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--头部下面的分类-->
+<div id="fenlei">
+    <div class="container">
+        <ul class="clear">
+            <li>
+                <ul class="border">
+                    <li><a href="#">娱乐</a></li>
+                    <li><a href="#">体育</a></li>
+                    <li><a href="#">资讯</a></li>
+                    <li></li>
+                </ul>
+
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">片花</a></li>
+                    <li><a href="#">网络电影</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="border">
+                    <li><a href="#">电视剧</a></li>
+                    <li><a href="#">综艺</a></li>
+                    <li><a href="#">脱口秀</a></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">动漫</a></li>
+                    <li><a href="#">儿童</a></li>
+                    <li><a href="#">教育</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="border">
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">母婴</a></li>
+                    <li><a href="#">健康</a></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">音乐</a></li>
+                    <li><a href="#">时尚</a></li>
+                    <li><a href="#">旅游</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="border">
+                    <li><a href="#">搞笑</a></li>
+                    <li><a href="#">原创</a></li>
+                    <li><a href="#">拍客</a></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">经济</a></li>
+                    <li><a href="#">科技</a></li>
+                    <li><a href="#">汽车</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="border">
+                    <li><a href="#">军事</a></li>
+                    <li><a href="#">公益</a></li>
+                    <li><a href="#">纪录片</a></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">风云榜</a></li>
+                    <li><a href="#">全网影视</a></li>
+                    <li><a href="#">全网搜索</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="border">
+                    <li><a href="#">奇秀直播</a></li>
+                    <li><a href="#">直播中心</a></li>
+                    <li><a href="#">应用商店</a></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">商城</a></li>
+                    <li><a href="#">游戏视频</a></li>
+                    <li><a href="#">游戏中心</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#">大头</a></li>
+                    <li><a href="#">爱奇艺号</a></li>
+                    <li><a href="#">VR</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="border">
+                    <li><a href="#">文学</a></li>
+                    <li><a href="#">广告</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li></li>
+                </ul>
+            </li>
+            <!--vip图标-->
+            <li>
+                <img src="../img/vip.png" alt="">
+                <p><a href="">VIP会员</a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--主体-->
+<div id="body">
+    <div class="container">
+        <!--焦点-->
+        <div id="focus" class="clear">
+            <!--焦点的左边-->
+            <div class="left lf">
+                <!--焦点左边的上面部分-->
+                <div class="title clear">
+                    <div class="lf">
+                        <b>今日焦点</b>
+                        <span>更多</span>
+                        <em>></em>
+                    </div>
+                    <div class="rf">
+                        <span>独播</span>
+                        <!--圆形-->
+                        <div></div>
+                        <div></div>
+                        <!--五角星-->
+                        <p></p>
+                    </div>
+                </div>
+                <!--焦点左边的中间部分-->
+                <div class="body">
+                    <h2>中方回应特朗普愿与金正恩会面</h2>
+                    <ul>
+                        <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                            <a href="#">7月1日起全面实施异地办理身份证  60天内发放</a>
+                        </li>
+                        <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                            <a href="#">朴槿惠未出席受贿案首次预审 5月23将正式庭审</a>
+                        </li>
+                        <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                            <a href="#">富豪因烦堵车开公司挖隧道 轿车巷内连撞七人</a>
+                        </li>
+                        <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                            <a href="#">格斗教练"秒杀"太极拳师引各路高手约战 你支持么</a>
+                        </li>
+                        <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                            <a href="#">鱼缸里制造的震撼奇景 小伙带绝症爱妻走中国</a>
+                        </li>
+                        <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                            <a href="#">美国警察被犯人打得半死 老太捡钱包拒不承认</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--焦点左边的下面部分-->
+                <div class="pic">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/index/a1a22caffacb4835a79b6b3381321261.gif" alt="">
+                        </dt>
+                        <dd>小伙求婚被拒抱腿不撒手</dd>
+                    </dl>
+                    <dl class="rf">
+                        <dt>
+                            <img src="../img/index/9d0236c4ec144d3785758227bc9eab69.jpg" alt="">
+                        </dt>
+                        <dd>艳星下海拍广告遭鲨鱼攻击</dd>
+                    </dl>
+                </div>
+            </div>
+            <!--焦点的中间-->
+            <div class="center lf">
+                <!--上面的图片-->
+                <div>
+                    <div class="banner_img" id="banner_img">
+                        <div >
+                            <img src="../img/banner/lt-1.jpg" alt="">
+                        </div>
+                        <div >
+                            <img src="../img/banner/lt-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--上一页-->
+                    <div class="previous">
+                        <div class="triangle"></div>
+                    </div>
+                    <!--下一页-->
+                    <div class="next">
+                        <div class="triangle"></div>
+                    </div>
+                    <!--图片的详细信息-->
+                    <div class="information">
+                        <div class="big-play lf">
+                            <div class="triangle-white"></div>
+                        </div>
+                        <p class="visible"><a href="#">爱奇艺电影:喜欢你</a></p>
+                        <p ><a href="#">《思美人》今晚24:00首播</a></p>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                        <a href="#">就是这个样子：揭秘《同学两亿岁》科幻感实景</a>
+                    </li>
+                    <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                        <a href="#">孙耀威宣布陈美诗结婚 鹿晗密约神秘女系谣言</a>
+                    </li>
+                    <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                        <a href="#">女星腿腿被醉汉刺死 《云巅》爱奇艺播放破20亿</a>
+                    </li>
+                    <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                        <a href="#">比伯联手DJ Khaled新单 2018春夏婚纱周全解析</a>
+                    </li>
+                    <li>
+                            <span class="bofang">
+                                <span class="caret-left"></span>
+                            </span>
+                        <a href="#">娜扎同款保湿喷雾 《人民的名义》正版书包邮</a>
+                    </li>
+                </ul>
+            </div>
+            <!--焦点的右边-->
+            <div class="right lf">
+                <dl>
+                    <dt><img src="../img/index/70a567ad37dd4baf808a728a36c2a5a0.jpg" alt=""></dt>
+                    <dd>老李头！你眉毛丢水里啦</dd>
+                </dl>
+                <dl class="distance">
+                    <dt><img src="../img/index/f48f9dc928da41c493399386ef6533e8.jpg" alt=""></dt>
+                    <dd>张绍刚赞小撒为最棒主持</dd>
+                </dl>
+                <dl>
+                    <dt><img src="../img/index/b044f17a0fc743b7992e885adf5a2d8d.jpg" alt=""></dt>
+                    <dd>欢乐颂领衔都市IP大剧</dd>
+                </dl>
+                <dl>
+                    <dt><img src="../img/index/2b33deb13d904b089648f98935d16191.jpg" alt=""></dt>
+                    <dd>蔡康永无情怼胡渐彪</dd>
+                </dl>
+                <dl class="distance">
+                    <dt><img src="../img/index/77948ff1b8c94c4791b70b3d5dc7d6f9.jpg" alt=""></dt>
+                    <dd>带你探寻不一样丝路故事</dd>
+                </dl>
+                <dl>
+                    <dt><img src="../img/index/85ffc46d64f84d69b569ac8260e70872.png" alt=""></dt>
+                    <dd>国际中学生儒学辩论大会</dd>
+                </dl>
+                <dl>
+                    <dt><img src="../img/index/4de7e0ac29414e238053589aa8b7d7b8.jpg" alt=""></dt>
+                    <dd>姜思达徐子珊玩泥巴遇蛇</dd>
+                </dl>
+                <dl class="distance">
+                    <dt><img src="../img/index/4444a4da7fed4a48aba2070d964532d6.jpg" alt=""></dt>
+                    <dd>肖旭狂整陈伟霆热巴</dd>
+                </dl>
+                <dl>
+                    <dt><img src="../img/index/3d555b1a5f88436cb823f5e770aeb3cd.jpg" alt=""></dt>
+                    <dd>他竟然靠游戏日赚上万！</dd>
+                </dl>
+
+            </div>
+        </div>
+        <!--综艺-->
+        <div id="variety" class="clear">
+            <!--左边-->
+            <div class="left lf">
+                <!--标题-->
+                <div class="title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>综艺</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">歌手</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">王牌对王牌</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">坑王驾到</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <!--左边的大图-->
+                    <div class="lf">
+                        <dt class="banner">
+                            <div>
+                                <div class="banner_img" id="banner_variety">
+                                    <div >
+                                        <img src="../img/banner/lt-3.jpg" alt="">
+                                    </div>
+                                    <div >
+                                        <img src="../img/banner/lt-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!--上一页-->
+                                <div class="previous">
+                                    <div class="triangle"></div>
+                                </div>
+                                <!--下一页-->
+                                <div class="next">
+                                    <div class="triangle"></div>
+                                </div>
+                                <div class="words_list">
+                                    <p class="visible">
+                                        <span>吃光全宇宙:澳门(下)</span>
+                                        <span>韩东君为拍戏吃山药减肥</span>
+                                    </p>
+                                    <p>
+                                        <span>饭饭男友:进口小哥哥</span>
+                                        <span>表情包空降遭宪哥强吻</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </dt>
+                    </div>
+                    <!--右边的图片列表-->
+                    <div class="rf">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/ca408b64c0274baa8453b009f816d8b0.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>奔跑吧</p>
+                                <p>跑男史上最惨两位女嘉宾</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/ff6046d794cd4261a7403b204da56b60.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>天生是优我</p>
+                                <p>阿根廷舞团踢馆</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/3a97cdb968364971a80fc7d61943a106.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>金曲捞</p>
+                                <p>张芸京大唱摇滚风悲伤情歌</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/a651b5ae248b441797439f9182081de6.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>我想见到你</p>
+                                <p>苏有朋再唱神曲《当》</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/5784be0b86fe41b29ac2333f2b62e842.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>高能少年团</p>
+                                <p>少年团变装 张一山只为帅</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/70c31919484844e882083df45b2e025d.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>诗书中华</p>
+                                <p>疯狂甩锅~汉服迷妹与老爸</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/3d7a22900a0b4ba29465ccc2c381f685.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                                <span class="vip"></span>
+                                <span class="byself"></span>
+                            </dt>
+                            <dd>
+                                <p>笑声传奇</p>
+                                <p>文松开怼白凯南:看着想吐</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/f07772821cf149cfbbd54624b5fa6f8e.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>音乐大师课</p>
+                                <p>留守儿童泪崩寄情于歌</p>
+                            </dd>
+                        </dl>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="right rf">
+                <!--标题-->
+                <div class="title">
+                    <!--标题的logo-->
+                    <div>
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>精彩推荐</span>
+                            <span>更多</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="body">
+                    <!--上面的图片-->
+                    <div>
+                        <img src="../img/iqiyi/15f61ec9420d4b9bb0d4abbc91706faa.jpg" alt="">
+                    </div>
+                    <!--下面的文字-->
+                    <div class="words">
+                        <p><a href="">等着我：文静陪你找人</a></p>
+                        <ul>
+                            <li>
+                                <b></b>
+                                <a href="#">宋茜张蓝心秀“圆规腿”</a>
+                            </li>
+                            <li>
+                                <b></b>
+                                <a href="#">涂磊教你如何辨渣男</a>
+                            </li>
+                            <li>
+                                <b></b>
+                                <a href="#">爱笑会议室喷饭来袭</a>
+                            </li>
+                            <li>
+                                <b></b>
+                                <a href="#">吴亦凡潘玮柏全球集结</a>
+                            </li>
+                            <li>
+                                <b></b>
+                                <a href="#">姐姐2回归大S夫妇来啦</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--自制综艺-->
+        <div id="variety-byself">
+            <!--标题-->
+            <div class="clear variety-little-title">
+                <!--标题的logo-->
+                <div class="lf">
+                    <a href="#">
+                        <span>自制综艺</span>
+                    </a>
+                    <a href="#">
+                        <span>奇葩说</span>
+                        <em>></em>
+                    </a>
+                </div>
+                <!--链接列表-->
+                <ul class="lf">
+                    <li>
+                        <a href="#">吃光全宇宙</a>
+                        <b></b>
+                    </li>
+                    <li>
+                        <a href="#">饭饭男友</a>
+                        <b></b>
+                    </li>
+                    <li>
+                        <a href="#">爱in思谈</a>
+                    </li>
+                </ul>
+            </div>
+            <!--主体-->
+            <div class="body clear">
+                <dl>
+                    <dt>
+                        <img src="../img/index/fc166a8840514638b372e54e6d8b3ed9.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="byself"></span>
+                    </dt>
+                    <dd>
+                        <p>
+                            <span>节目名字</span>
+                            厉害陈瑶音
+                        </p>
+                        <p>乐杀手献唱鼓鼓</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/cd4b6ecf5a114303a98de6bd04169c14.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="byself"></span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            <span>节目名字</span>
+                            进口小哥哥迪玛
+                        </p>
+                        <p>希挑花眼霸气表白</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/9f218d61fa9443bc93b7c3b46b439733.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="byself"></span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            <span>节目名字</span>
+                            强阵容吴亦凡
+                        </p>
+                        <p>潘玮柏为嘻哈正名！</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/37411d7749cb4f578de2356c5967a7d6.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            <span>节目名字</span>
+                            周五档肖骁神吐
+                        </p>
+                        <p>槽婚礼就是场巨型装X</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/36e5a00473304c2b9fc555b1f3cce6eb.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="byself"></span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            <span>节目名字</span>
+                            周六档董婧揭求
+                        </p>
+                        <p>助新闻背后的故事：比惨？</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/0d179ebde8294596b1403c70c47233c8.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            <span>节目名字</span>
+                            抢先看：S姐妹
+                        </p>
+                        <p>现场落泪 汪小菲变裁判？</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/0ad7ea90e4d54df4a40e02f85ec2ab8f.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="byself"></span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            <span>节目名字</span>
+                            抢先看何洁大胆
+                        </p>
+                        <p>发问张绍刚学校潜规则</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--脱口秀-->
+        <div id="talk-show">
+            <!--标题-->
+            <div class="clear variety-little-title">
+                <!--标题的logo-->
+                <div class="lf">
+                    <a href="#">
+                        <span>脱口秀</span>
+                    </a>
+                    <a href="#">
+                        <span>更多</span>
+                        <em>></em>
+                    </a>
+                </div>
+                <!--链接列表-->
+                <ul class="lf">
+                    <li>
+                        <a href="#">智在说</a>
+                    </li>
+                </ul>
+            </div>
+            <!--主体-->
+            <div class="body clear pic-7">
+                <dl>
+                    <dt>
+                        <img src="../img/index/8b7f514261f245d59c3e30749f71818d.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            暴走大事件
+                        </p>
+                        <p>滴滴打人落伍滴滴专掐上线</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/e856f3a6258c4c5c9d3303daa2157d85.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            非正式会谈
+                        </p>
+                        <p>这货是澳大利亚的吉祥物</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/4f7d57d3780244a5b50744e061f65d73.gif" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="byself"></span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            笑霸来了
+                        </p>
+                        <p>单手吃你的良心不会痛吗</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/2fbfc1f915994768beed999846b2de27.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="byself"></span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            今晚80后脱口秀
+                        </p>
+                        <p>宁泽涛颜值太高遭吐槽</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/163adb68ff784fadb48fd286c939c40b.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+                        <span class="only-play"></span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            谁是你的菜
+                        </p>
+                        <p>钟丽缇备巨熊吓坏林志颖</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/db2be13f8c25449ab9c83f8dbc3ec9a5.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            好莱坞工匠
+                        </p>
+                        <p>范·迪塞尔配音格鲁特</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/index/a194038e90fa4b52b357a2ce491e3737.jpg" alt="">
+                        <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                        <span class="stage">
+                            03-30期
+                        </span>
+
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            凝视脱口秀
+                        </p>
+                        <p>扮演林黛玉的竟是周璇</p>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+        <!--广告-->
+        <div class="ad-big">
+            <img src="../img/ad/ad-big-1.png" alt="">
+        </div>
+        <!--娱乐-->
+        <div id="entertainment" class="clear">
+            <div class="left lf variety-core">
+                <!--标题-->
+                <div class="title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>娱乐</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">爱奇艺早班机</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">娱乐猛回头</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">七分七秒</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">帕帕帮</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">泡菜帮</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">音乐大抖腿</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <!--左边的大图-->
+                    <div class="lf">
+                        <dt>
+                            <!--today-->
+                            <span></span>
+                            <!--自制-->
+                            <span></span>
+                            <!--previous-->
+                            <span class="previous">
+                            <span class="triangle"></span>
+                        </span>
+                            <!--next-->
+                            <span class="next">
+                            <span class="triangle"></span>
+                        </span>
+                            <!--1080p-->
+                            <span>
+                            1080<span>p</span>
+                        </span>
+                            <!--03-30期-->
+                            <span>
+                            03-30期
+                        </span>
+                            <img src="../img/index/f96c1264c913415485c06bba63f196d4.jpg" alt="">
+                        </dt>
+                        <dd>
+                            <p>范冰冰称被男友黑惨 李晨忙示爱:我会负责</p>
+                            <p>昨天，李晨不服自己化媚娘装之，专门P图说下次要</p>
+                        </dd>
+                    </div>
+                    <!--右边的图片列表-->
+                    <div class="rf">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112273416_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112274717_m_601_m1_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112273281_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112275022_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112273418_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112274813_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112275699_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112275750_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                                <span class="byself"></span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/v_112273282_m_601_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/index/6eb868e6883a4e1f83ad9cf9901161c9.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                                <span class="special-object">专题</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--猜你喜欢-->
+        <div id="like">
+            <!--标题-->
+            <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>猜你喜欢</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">我的播放记录</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">我的订阅</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">我的收藏</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">我的上传</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--主体-->
+            <div class="body">
+                <div class="clear pic-7">
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                            <span class="byself"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                            <span class="byself"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                            <span class="only-play"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+
+                </div>
+                <div class="clear pic-7">
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                            <span class="byself"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                            <span class="byself"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+                            <span class="only-play"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">
+                            1080
+                            <span>p</span>
+                        </span>
+                            <span class="stage">
+                            03-30期
+                        </span>
+
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文本
+                            </p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                       进入个人中心
+                        <em>></em>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+        <!--爱奇艺号-->
+        <div id="iqiyi" class="margin-20">
+            <div class="variety-title clear">
+                <!--标题的logo-->
+                <div class="lf">
+                    <a href="#">
+                        <!--小图标-->
+                        <b></b>
+                        <span>爱奇艺号</span>
+                        <span>更多</span>
+                        <em>></em>
+                    </a>
+                </div>
+            </div>
+            <div class="body clear pic-7">
+                <dl>
+                    <dt>
+                        <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                        <span class="stage">
+                            30:30
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            这是一段文本
+                        </p>
+                        <p>
+                            <span class="person"></span>
+                            这是一段文本
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                        <span class="stage">
+                            30:30
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            这是一段文本
+                        </p>
+                        <p>
+                            <span class="person"></span>
+                            这是一段文本
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                        <span class="stage">
+                            30:30
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            这是一段文本
+                        </p>
+                        <p>
+                            <span class="person"></span>
+                            这是一段文本
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                        <span class="stage">
+                            30:30
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            这是一段文本
+                        </p>
+                        <p>
+                            <span class="person"></span>
+                            这是一段文本
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                        <span class="stage">
+                            30:30
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            这是一段文本
+                        </p>
+                        <p>
+                            <span class="person"></span>
+                            这是一段文本
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                        <span class="stage">
+                            30:30
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            这是一段文本
+                        </p>
+                        <p>
+                            <span class="person"></span>
+                            这是一段文本
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                        <span class="stage">
+                            30:30
+                        </span>
+                    </dt>
+                    <dd class="dd-words-down">
+                        <p>
+                            这是一段文本
+                        </p>
+                        <p>
+                            <span class="person"></span>
+                            这是一段文本
+                        </p>
+                    </dd>
+                </dl>
+
+
+            </div>
+        </div>
+        <!--推广广告-->
+        <div class="ad-scroll">
+            <div class="words">推广广告</div>
+            <div class="border">
+                <div class="ad-previous"></div>
+                <div class="visible">
+                    <div class="img clear" id="ad_pic">
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/1.0.jpg" alt="">
+                                    <img src="../img/ad/1.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/1.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/2.0.jpg" alt="">
+                                    <img src="../img/ad/2.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/2.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/3.0.jpg" alt="">
+                                    <img src="../img/ad/3.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/3.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/4.0.jpg" alt="">
+                                    <img src="../img/ad/4.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/4.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/5.0.jpg" alt="">
+                                    <img src="../img/ad/5.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/5.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/6.0.jpg" alt="">
+                                    <img src="../img/ad/6.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/6.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible ">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/7.0.jpg" alt="">
+                                    <img src="../img/ad/7.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/7.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ad-next"></div>
+            </div>
+        </div>
+        <!--电影-->
+        <div id="movie" class="margin-20 clear">
+            <!--左边-->
+            <div class="left lf">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>电影</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">爱奇艺看电影</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">网络大电影</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">VIP电影</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">看金刚</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                            <span class="pay"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <span class="vip"></span>
+                            <img src="../img/iqiyi/v_111565857_m_601_m2_180_236.jpg" alt="">
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文字
+                                <span class="rf">
+                                    <i>8</i><em>.3</em>
+                                </span>
+                            </p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <span class="vip"></span>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文字
+                                <span class="rf">
+                                    <i>8</i><em>.0</em>
+                                </span>
+                            </p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <span class="vip"></span>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>
+                                这是一段文字
+                                <span class="rf">
+                                    <i>7</i><em>.7</em>
+                                </span>
+                            </p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <span class="vip"></span>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                            <span class="only-play"></span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt><img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt=""></dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                            <span class="byself"></span>
+                            <span class="p-1080">
+                                <span>1080</span><span>p</span>
+                            </span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                            <span class="byself"></span>
+                            <span class="p-1080">
+                                <span>1080</span><span>p</span>
+                            </span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt="">
+                            <span class="p-1080">
+                                <span>1080</span><span>p</span>
+                            </span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt><img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt=""></dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt><img src="../img/iqiyi/v_111644187_m_601_m1_180_236.jpg" alt=""></dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字
+                                <span class="rf">
+                                    <i>7</i><em>.8</em>
+                                </span>
+                            </p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="right rf">
+                <!--标题-->
+                <div class="variety-right-title">
+                    <!--标题的logo-->
+                    <div>
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>电影榜</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                </div>
+                <!--主体-->
+                <div class="body">
+                    <!--电影排行榜-->
+                    <ul>
+                        <li>
+                            <i>1</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <i>2</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <i>3</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <a href="">功夫瑜伽</a>
+                            <b class="arrow-up"></b>
+                        </li>
+                    </ul>
+                    <!--最后一张电影图片-->
+                    <dl>
+                        <dt><img src="../img/iqiyi/v_111565857_m_601_m2_180_236.jpg" alt=""></dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--网络电影-->
+        <div id="network-movie" class="clear">
+            <div class="left lf">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>网络电影</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">独播网大推荐</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">我要合作</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="pic-7">
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="vip"></span>
+                            <span class="only-play"></span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="vip"></span>
+                            <span class="only-play"></span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="vip"></span>
+                            <span class="only-play"></span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="right lf">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>片花</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">美女与野兽</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">西游降魔</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="pic-7">
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="../img/iqiyi/186a35a0c87f4e0a8b723c3103c1bc1e.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+        <!--广告-->
+        <div class="ad-big">
+            <img src="../img/ad/ad-big-2.png" alt="">
+        </div>
+        <!--电视剧-->
+        <div id="tv" class="movie margin-20 clear">
+            <!--左边-->
+            <div class="left lf">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>电视剧</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">内地</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">美剧</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">自制剧</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">神剧亮了</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                            <span class="vip"></span>
+                            <span class="byself"></span>
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage">更新至10集</span>
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+
+
+                </div>
+            </div>
+            <!--右边-->
+            <div class="right rf">
+                <!--标题-->
+                <div class="variety-right-title">
+                    <!--标题的logo-->
+                    <div>
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>电视剧榜</span>
+                            <span>更多</span>
+                        </a>
+                    </div>
+                </div>
+                <!--主体-->
+                <div class="body">
+                    <!--电影排行榜-->
+                    <ul>
+                        <li>
+                            <i>1</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="arrow-up"></b>
+                        </li>
+                        <li>
+                            <i>2</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <i>3</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="arrow-down"></b>
+                        </li>
+                        <li>
+                            <i>4</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="arrow-up"></b>
+                        </li>
+                        <li>
+                            <i>5</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <i>6</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="arrow-down"></b>
+                        </li>
+                        <li>
+                            <i>7</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="little-line"></b>
+                        </li>
+                        <li>
+                            <i>8</i>
+                            <a href="">功夫瑜伽</a>
+                            <b class="arrow-down"></b>
+                        </li>
+
+                    </ul>
+                    <!--最后一张电影图片-->
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/a_100047085_m_601_m4_180_236.jpg" alt="">
+                        </dt>
+                        <dd class="dd-words-down">
+                            <p>这是一段文字</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--推广广告-->
+        <div class="ad-scroll">
+            <div class="words">推广广告</div>
+            <div class="border">
+                <div class="ad-previous"></div>
+                <div class="visible">
+                    <div class="img clear" id="ad_pic1">
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/1.0.jpg" alt="">
+                                    <img src="../img/ad/1.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/1.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/2.0.jpg" alt="">
+                                    <img src="../img/ad/2.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/2.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/3.0.jpg" alt="">
+                                    <img src="../img/ad/3.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/3.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/4.0.jpg" alt="">
+                                    <img src="../img/ad/4.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/4.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/5.0.jpg" alt="">
+                                    <img src="../img/ad/5.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/5.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/6.0.jpg" alt="">
+                                    <img src="../img/ad/6.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/6.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--可视区-->
+                        <div class="pic-visible">
+                            <!--图片罗列区-->
+                            <div class="pic-arrange">
+                                <div class="lf two">
+                                    <img src="../img/ad/7.0.jpg" alt="">
+                                    <img src="../img/ad/7.1.jpg" alt="">
+                                </div>
+                                <div class="lf big">
+                                    <img src="../img/ad/7.2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ad-next"></div>
+            </div>
+        </div>
+        <!--动漫-->
+        <div id="cartoon" class="clear">
+            <!--左边-->
+            <div class="left clear lf">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>动漫</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">真人</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">动漫电影</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <!--左边的大图-->
+                    <dl class="lf cartoon-pic-1">
+                        <dt>
+                            <!--today-->
+                            <span class="today"></span>
+                            <!--1080p-->
+                            <span class="p-1080">1080<span>p</span></span>
+                            <img src="../img/iqiyi/7faca6f418794637a105cf0c7a2e3faf.jpg" alt="">
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <!--右边的图片列表-->
+                    <div class="rf cartoon-pic-2">
+                        <dl class="rf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="rf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!--中间的儿童-->
+            <div class="center clear lf">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>儿童</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <img src="../img/iqiyi/fb83f771e4ae497187a07afa1381c38b.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../img/iqiyi/fb83f771e4ae497187a07afa1381c38b.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../img/iqiyi/fb83f771e4ae497187a07afa1381c38b.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../img/iqiyi/fb83f771e4ae497187a07afa1381c38b.jpg" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+                <!--图片列表-->
+                <div class="lf cartoon-pic-4">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--右边的教育-->
+            <div class="right clear lf">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>教育</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">巧虎</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">广场舞</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">国考</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">考研</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--图片列表-->
+                <div class="lf cartoon-pic-4">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--体育-->
+        <div id="physical" class="clear margin-20">
+            <!--运动-->
+            <div class="sport lf clear">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>体育</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">足球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">篮球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">美网</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">昆仑绝</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--图片列表-->
+                <div class="lf cartoon-pic-4">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--音乐-->
+            <div class="music lf clear">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>音乐</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">爱奇艺音乐榜</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <!--左边的大图-->
+                    <dl class="lf cartoon-pic-1">
+                        <dt>
+                            <img src="../img/iqiyi/v_112095339_m_601_180_236.jpg" alt="">
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <!--右边的图片列表-->
+                    <div class="rf cartoon-pic-2">
+                        <dl class="rf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="rf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!--时尚-->
+            <div class="fashion lf clear">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>时尚</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">独家报道</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">秀场</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <!--左边的大图-->
+                    <dl class="lf cartoon-pic-1">
+                        <dt>
+                            <img src="../img/iqiyi/v_112095339_m_601_180_236.jpg" alt="">
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <!--右边的图片列表-->
+                    <div class="lf cartoon-pic-4">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--杂烩-->
+        <div id="mixed" class="clear">
+            <div class="floor">
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-4">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-4">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-3">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="floor">
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-4">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-4">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-3">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="floor">
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-4">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-4">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="lf clear">
+                    <!--标题-->
+                    <div class="variety-title clear">
+                        <!--标题的logo-->
+                        <div class="lf">
+                            <a href="#">
+                                <!--小图标-->
+                                <b></b>
+                                <span>体育</span>
+                                <span>更多</span>
+                                <em>></em>
+                            </a>
+                        </div>
+                        <!--链接列表-->
+                        <ul class="lf">
+                            <li>
+                                <a href="#">足球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">篮球</a>
+                                <b></b>
+                            </li>
+                            <li>
+                                <a href="#">昆仑绝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图片列表-->
+                    <div class="lf cartoon-pic-3">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                这是一段文本
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--原创-->
+        <div id="original">
+            <!--左边-->
+            <div class="left lf">
+                <!--标题-->
+                <div class="title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>综艺</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">歌手</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">王牌对王牌</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">坑王驾到</a>
+                        </li>
+                    </ul>
+                    <!--右边的原创合作-->
+                    <div class="cooperation rf">
+                        <a href="">爱奇艺号认证与合作申请</a>
+                    </div>
+                </div>
+                <!--主体-->
+                <div class="body clear">
+                    <!--左边的大图-->
+                    <div class="lf">
+                        <dt>
+                            <!--today-->
+                            <span></span>
+                            <!--自制-->
+                            <span></span>
+                            <!--previous-->
+                            <span class="previous">
+                                <span class="triangle"></span>
+                            </span>
+                            <!--next-->
+                            <span class="next">
+                                <span class="triangle"></span>
+                            </span>
+                            <!--1080p-->
+                            <span>
+                                1080<span>p</span>
+                            </span>
+                            <!--03-30期-->
+                            <span>
+                                03-30期
+                            </span>
+                            <img src="../img/iqiyi/6ab5e110ab51461fb5684300671e2a2f.jpg" alt="">
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </div>
+                    <!--右边的图片列表-->
+                    <div class="rf">
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                                <span class="vip"></span>
+                                <span class="byself"></span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+                        <dl class="lf">
+                            <dt>
+                                <img src="../img/iqiyi/526ebc69174741e6834f7f23276d11d1.jpg" alt="">
+                                <span class="p-1080">1080<span>p</span></span>
+                                <span class="stage"> 03-30期</span>
+                            </dt>
+                            <dd>
+                                <p>这是一段文本</p>
+                                <p>这是一段文本</p>
+                            </dd>
+                        </dl>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="right rf">
+                <!--标题-->
+                <div class="title">
+                    <!--标题的logo-->
+                    <div>
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>原创达人</span>
+                            <span>更多</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="words">
+                        <div class="clear">
+                            <div class="left lf">
+                                <img src="../img/iqiyi/passport_1264826450_145864328519948_130_130.jpg" alt="">
+                            </div>
+                            <div class="right lf">
+                                <div>新媒体</div>
+                                <p>123,456订阅</p>
+                                <div>
+                                    <button>+订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear">
+                            <div class="left lf">
+                                <img src="../img/iqiyi/passport_1264826450_145864328519948_130_130.jpg" alt="">
+                            </div>
+                            <div class="right lf">
+                                <div>新媒体</div>
+                                <p>123,456订阅</p>
+                                <div>
+                                    <button>+订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear">
+                            <div class="left lf">
+                                <img src="../img/iqiyi/passport_1264826450_145864328519948_130_130.jpg" alt="">
+                            </div>
+                            <div class="right lf">
+                                <div>新媒体</div>
+                                <p>123,456订阅</p>
+                                <div>
+                                    <button>+订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear">
+                            <div class="left lf">
+                                <img src="../img/iqiyi/passport_1264826450_145864328519948_130_130.jpg" alt="">
+                            </div>
+                            <div class="right lf">
+                                <div>新媒体</div>
+                                <p>123,456订阅</p>
+                                <div>
+                                    <button>+订阅</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--搞笑-->
+        <div id="funny" class="clear">
+            <div class="lf clear">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>搞笑</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">足球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">篮球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">昆仑绝</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--图片列表-->
+                <div class="lf cartoon-pic-3">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lf clear">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>体育</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">足球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">篮球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">昆仑绝</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--图片列表-->
+                <div class="lf cartoon-pic-3">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--游戏-->
+        <div id="game" class="clear">
+            <div class="lf clear">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>游戏</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">足球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">篮球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">昆仑绝</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--图片列表-->
+                <div class="lf cartoon-pic-3">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lf clear">
+                <!--标题-->
+                <div class="variety-title clear">
+                    <!--标题的logo-->
+                    <div class="lf">
+                        <a href="#">
+                            <!--小图标-->
+                            <b></b>
+                            <span>体育</span>
+                            <span>更多</span>
+                            <em>></em>
+                        </a>
+                    </div>
+                    <!--链接列表-->
+                    <ul class="lf">
+                        <li>
+                            <a href="#">足球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">篮球</a>
+                            <b></b>
+                        </li>
+                        <li>
+                            <a href="#">昆仑绝</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--图片列表-->
+                <div class="lf cartoon-pic-3">
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            这是一段文本
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                    <dl class="lf">
+                        <dt>
+                            <img src="../img/iqiyi/v_112091348_m_601_m2_180_101.jpg" alt="">
+                            <span class="p-1080">1080<span>p</span></span>
+                            <span class="stage"> 03-30期</span>
+                        </dt>
+                        <dd>
+                            <p>这是一段文本</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!--频道-->
+        <div id="pindao" class="clear">
+            <dl>
+                <dt>
+                    <img src="../img/iqiyi/3706d2a7745542c691fd6147d25cc32f.jpg" alt="">
+                    <div>爱奇艺公益寻亲平台</div>
+                </dt>
+                <dd >
+                    <span>公共频道</span>
+                    <span>更多</span><em>></em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="../img/iqiyi/3706d2a7745542c691fd6147d25cc32f.jpg" alt="">
+                    <div>爱奇艺公益寻亲平台</div>
+                </dt>
+                <dd >
+                    <span>公共频道</span>
+                    <span>更多</span><em>></em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="../img/iqiyi/3706d2a7745542c691fd6147d25cc32f.jpg" alt="">
+                    <div>爱奇艺公益寻亲平台</div>
+                </dt>
+                <dd >
+                    <span>公共频道</span>
+                    <span>更多</span><em>></em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="../img/iqiyi/3706d2a7745542c691fd6147d25cc32f.jpg" alt="">
+                    <div>爱奇艺公益寻亲平台</div>
+                </dt>
+                <dd >
+                    <span>公共频道</span>
+                    <span>更多</span><em>></em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="../img/iqiyi/3706d2a7745542c691fd6147d25cc32f.jpg" alt="">
+                    <div>爱奇艺公益寻亲平台</div>
+                </dt>
+                <dd >
+                    <span>公共频道</span>
+                    <span>更多</span><em>></em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="../img/iqiyi/3706d2a7745542c691fd6147d25cc32f.jpg" alt="">
+                    <div>爱奇艺公益寻亲平台</div>
+                </dt>
+                <dd >
+                    <span>公共频道</span>
+                    <span>更多</span><em>></em>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="../img/iqiyi/3706d2a7745542c691fd6147d25cc32f.jpg" alt="">
+                    <div>爱奇艺公益寻亲平台</div>
+                </dt>
+                <dd >
+                    <span>公共频道</span>
+                    <span>更多</span><em>></em>
+                </dd>
+            </dl>
+
+
+
+        </div>
+        <!--广告-->
+        <div class="ad-big">
+            <img src="../img/ad/ad-big-3.png" alt="">
+        </div>
+        <!--合作伙伴-->
+        <div id="partner" class="clear">
+            <div class="left lf">
+                <p class="title">
+                    <span>合作伙伴</span>
+                    <span>更多</span><em>></em>
+                </p>
+                <div>
+                    <p>万达电影网</p>
+                    <p>微博电视台</p>
+                </div>
+                <div>
+                    <p>华谊兄弟</p>
+                    <p>百度贴吧</p>
+                </div>
+                <div>
+                    <p>万达</p>
+                    <p>央广网</p>
+                </div>
+                <div>
+                    <p>光线影业</p>
+                    <p>hao123</p>
+                </div>
+                <div>
+                    <p>万达电影</p>
+                    <p>万达电影网</p>
+                </div>
+                <div>
+                    <p>万达电影</p>
+
+                </div>
+                <div>
+                    <p>万达电影</p>
+
+                </div>
+                <div>
+                    <p>万达电影</p>
+
+                </div>
+            </div>
+            <div class="right lf">
+                <p class="title">
+                    <span>合作伙伴</span>
+                    <span>更多</span><em>></em>
+                </p>
+                <div>
+                    <p>爱奇艺宣布完成可债转股</p>
+                    <p>爱奇艺2016奇秀直播年度盛典开幕</p>
+                </div>
+                <div>
+                    <p>爱奇艺宣布完成可债转股</p>
+                    <p>爱奇艺2016奇秀</p>
+                </div>
+                <div>
+                    <p>爱奇艺宣布完成可债转股</p>
+                    <p>爱奇艺2016奇秀直播年度盛典开幕</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+<div id="footer">
+    <div class="container">
+        <div class="list clear">
+            <div>
+                <p>京网文[2015]0652-282号-1</p>
+                <p>京ICP证110636</p>
+            </div>
+            <div>
+                <p>
+                    <span></span>
+                    中国互联网联盟
+                </p>
+                <p>
+                    <span></span>
+                    中国互联网联盟
+                </p>
+            </div>
+            <div>
+                <p>京网文[2015]0652-282号-1</p>
+                <p>京ICP证110636</p>
+            </div>
+            <div>
+                <p>京网文[2015]0652-282号-1</p>
+                <p>京ICP证110636</p>
+            </div>
+            <div>
+                <p>京网文[2015]0652-282号-1</p>
+                <p>京ICP证110636</p>
+            </div>
+        </div>
+       <p>互联网医疗互联网医疗互联网医疗互联网医疗互联网医疗互联网医疗互联网医疗</p>
+        <ul class="clear">
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+            <b></b>
+            <li>
+                <a href="">公司介绍</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<!--其他全局的部件-->
+<!--登录注册遮罩层-->
+<div id="zzc"></div>
+<!--登录界面-->
+<div id="login" class="login-share">
+        <div class="header">
+            <div class="rf">&times;</div>
+            <div>登录爱奇艺 , 享受品质生活</div>
+        </div>
+        <form method="get">
+            <div class="form-group">
+                <div>
+                    <span>账&nbsp;号:</span>
+                </div>
+                <div>
+                    <input type="text" name="ename">
+                </div>
+                <div>
+                    <i class="tip"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <span>密&nbsp;码:</span>
+                </div>
+                <div>
+                    <input type="password" name="pw">
+                </div>
+                <div>
+                    <i class="tip"></i>
+                </div>
+            </div>
+            <div class="password">
+                <input type="checkbox" checked="true">
+                <span>记住我</span>
+                <div>
+                    <span>找回密码</span>
+                    <b></b>
+                    <span>立即注册</span>
+                </div>
+            </div>
+            <div class="login">
+                <input type="button" value="登录" name="login_btn">
+            </div>
+        </form>
+</div>
+<!--注册界面-->
+<div id="register" class="login-share">
+    <div class="header">
+        <div class="rf">&times;</div>
+        <div>登录爱奇艺 , 享受品质生活</div>
+    </div>
+    <form>
+        <div class="form-group">
+            <div>
+                <span>手&nbsp;机:</span>
+            </div>
+            <div>
+                <input type="text" placeholder="请输入手机号" class="phone">
+            </div>
+            <div>
+                <b class="msg"></b>
+                <i class="phone-tip"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <span>密&nbsp;码:</span>
+            </div>
+            <div>
+                <input type="password" class="pw" placeholder="8-20位字母，数字或字符至少包含两种">
+            </div>
+            <div>
+                <b class="msg"></b>
+                <i></i>
+            </div>
+        </div>
+        <div id="auth">
+            <div>
+                <span>验证码:</span>
+            </div>
+            <div>
+                <input type="text" onpaste="return false" class="auth_enter">
+                <!--验证码出现的地方-->
+                <canvas width=80 height="26"></canvas>
+                <span class="refresh"></span>
+            </div>
+            <div>
+                <b class="msg"></b>
+                <i></i>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="请输入验证码">
+            <span>免费获取短信</span>
+        </div>
+        <div class="password">
+            <input type="checkbox" checked="true">
+            <span>
+                我同意<a>《用户服务协议》</a>
+            </span>
+        </div>
+        <div class="login">
+            <input type="button" value="注册" id="reg_btn">
+        </div>
+        <div class="login-other">
+            <a  class="other">使用其他方式登录</a>
+        </div>
+        <p class="arrow">
+            <span></span>
+        </p>
+        <div>
+            <span ></span>
+            <span ></span>
+        </div>
+    </form>
+</div>
+<!--返回顶部和意见反馈-->
+<div id="return" class="return">
+    <div class="return-top-pa">
+        <div class="return-top"></div>
+        <div class="words">回到顶部</div>
+    </div>
+    <div class="suggest" onclick="window.location.href='suggest.html'">
+        <div class="pic"></div>
+        <div class="words">
+            意见反馈
+        </div>
+    </div>
+
+</div>
+
+<!--电梯楼层-->
+<div id="lift" class="lift">
+    <div class="variety">
+        娱乐
+    </div>
+    <div class="tv">
+       电视剧
+    </div>
+</div>
+</body>
+<script src="../js/index.js"></script>
+</html>

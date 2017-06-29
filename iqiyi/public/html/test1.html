@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #pa {
+
+            width: 140px;
+            height: 100px;
+            border: 1px solid #4dc71f;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /*滚动条::高度给定就行*/
+        ul {
+            /*padding:10px;*/
+            position: absolute;
+            border: 1px solid red;
+            height: 100px;
+            width: 150px;
+            margin: 0;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div id="pa">
+    <ul id="ul">
+        <li>1111</li>
+        <li>2222</li>
+        <li>33333</li>
+        <li>44444</li>
+        <li>5555</li>
+        <li>6666</li>
+        <li>6666</li><li>6666</li>
+        <li>6666</li>
+        <li>6666</li>
+        <li>6666</li>
+        <li>6666</li>
+        <li>6666</li>
+        <li>6666</li>
+        <li>6666</li>
+    </ul>
+    <div class="scroll"></div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+
+    //    $("ul").scroll(function () {
+    //        console.log(2222);
+    //        //console.log($("ul").scrollTop());
+    //        //ul.top=$("ul").scrollTop();
+    //        //document.body.scrollTo = 0;
+    //        //获取滚动条滚动的距离
+    //        //console.log($("ul").scrollLeft());
+    //    });
+
+    $("ul").on("mousewheel",function (event) {
+        var scrollTop = this.scrollTop,
+            scrollHeight = this.scrollHeight,
+            height = this.clientHeight;
+
+        var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || 0);
+        console.log(delta);
+        if ((delta > 0 && scrollTop <= delta) || (delta < 0 && scrollHeight - height - scrollTop <= -1 * delta)) {
+            // IE浏览器下滚动会跨越边界直接影响父级滚动，因此，临界时候手动边界滚动定位
+            this.scrollTop = delta > 0? 0: scrollHeight;
+            // 向上滚 || 向下滚
+            event.preventDefault();
+        }
+    });
+//        console.log(ul.scrollTop);
+//        //元素显示的高度
+//        console.log(ul.clientHeight);
+//        //元素的实际高度
+//        console.log(ul.scrollHeight);
+//        console.log(ul.offsetHeight);
+//        if(ul.offsetHeight-ul.clientHeight<=ul.scrollTop){
+//            console.log("到头了"+ul.scrollTop);
+//            e.preventDefault();
+//        }
+
+console.log($);
+</script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+/*通用css*/
+* {
+  box-sizing: border-box;
+}
+ul,
+li,
+p,
+body,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font: 14px/1.5 Tahoma, Helvetica, Arial, "\5FAE\8F6F\96C5\9ED1", sans-serif;
+}
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+.lf {
+  float: left;
+}
+.rf {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  vertical-align: bottom;
+}
+.b-title b {
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+  background: url(../img/help/icon-help.png) 0 -50px;
+}
+.b-title span {
+  vertical-align: top;
+  font-size: 20px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.b-title .rf {
+  color: #5FA92A;
+}
+.mix b {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url(../img/person/vipfocusIndividual.png);
+}
+.mix span {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 2.5px;
+  margin-left: 5px;
+}
+.figure {
+  margin-top: 15px;
+}
+.figure div.figure-left {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.figure div.figure-left > img {
+  width: 100%;
+  height: 100%;
+}
+.figure div.figure-right {
+  width: 170px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.figure div.figure-right div + div {
+  margin-top: 4px;
+}
+.figure div.figure-right div:nth-child(1) b {
+  display: none;
+  padding: 3px 10px;
+  background: #6AA826;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: -3px;
+}
+.figure div.figure-right div:nth-child(2) b {
+  vertical-align: -2px;
+  display: inline-block;
+  height: 13px;
+  width: 14px;
+  margin-right: 5px;
+}
+.figure div.figure-right div:nth-child(2) b:nth-child(1) {
+  background: url(../img/person/paopao-landingpage.png) -80px -220px;
+}
+.figure div.figure-right div:nth-child(2) span:nth-child(2) {
+  margin-right: 10px;
+}
+.figure div.figure-right div:nth-child(2) b:nth-child(3) {
+  background: url(../img/person/paopao-landingpage.png) 0 -240px;
+}
+.figure div.figure-right div:nth-child(3) {
+  height: 40px;
+  overflow: hidden;
+  color: #929190;
+}
+.figure div.figure-right:hover div:nth-child(1) b {
+  display: block;
+}
+.figure div.figure-right:hover div:nth-child(1) span {
+  color: #5BA702;
+}
+/*导航条*/
+#navbar {
+  background: #222222;
+  text-align: center;
+  height: 46px;
+  width: 100%;
+}
+#navbar .logo {
+  margin-top: 4px;
+}
+#navbar .search input {
+  height: 30px;
+  width: 230px;
+  padding: 5px;
+  border: 1px solid #5AA700;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: #E3E3E3;
+  outline: none;
+}
+#navbar .search input:hover {
+  background: #fff;
+}
+#navbar .search input:focus {
+  background: #fff;
+}
+/*搜索框的按钮*/
+#search {
+  margin-top: 8px;
+  margin-left: 161px;
+}
+#search > div {
+  width: 36px;
+  height: 30px;
+  background: url(../img/help/srch_btn-new.png);
+}
+/*导航栏中的标签页*/
+#navbar .nav-tab li {
+  float: left;
+  color: #fff;
+  line-height: 50px;
+  margin-left: 15px;
+}
+#navbar .nav-tab li a {
+  color: #fff;
+  cursor: pointer;
+}
+#person {
+  background: #DBEFA8;
+}
+#person .hidden {
+  display: none;
+}
+#person > .bg {
+  width: 1419px;
+  height: 260px;
+  margin: 0 auto;
+  background: url(../img/person/paopaoTrends_individualBg.jpg);
+}
+#person .container {
+  padding-top: 20px;
+  text-align: center;
+}
+#person .container .head-pic {
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+#person .container .head-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#person .container .head-pic input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+}
+#person .container #username {
+  color: #699f00;
+  font-size: 18px;
+  margin: 20px 0;
+}
+#person .container .signature span {
+  margin-left: 12.5px;
+}
+#person .container .signature b {
+  margin-top: 3.5px;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 15px;
+  height: 14px;
+  background: url(../img/person/paopao-landingpage.png) -80px -180px;
+}
+#person .container .input {
+  margin-top: 20px;
+  margin-left: 344px;
+  text-align: left;
+  position: relative;
+}
+#person .container .input #count {
+  position: absolute;
+  right: 347px;
+  top: 0;
+}
+#person .container .input input {
+  width: 282px;
+  height: 27px;
+  border: 1px solid #B9D476;
+  margin-right: 10px;
+  vertical-align: top;
+  padding-left: 5px;
+}
+#person .container .input span {
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+#person .container .input .save {
+  background: #B2B2B2;
+  color: #fff;
+  margin-right: 10px;
+}
+#person .container .input .cancel {
+  background: #fff;
+  color: #5AA700;
+}
+#title {
+  background: #F5F5F5;
+}
+#title .container {
+  padding: 0 220px;
+}
+#title .container > div {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+#title .container div:hover {
+  color: #5EAA08;
+  border-bottom: 2px solid #5AA700;
+}
+#title .container div + div {
+  margin-left: 70px;
+}
+#main {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#main .dynamic .left {
+  width: 660px;
+  margin-right: 40px;
+}
+#main .dynamic .left .title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+#main .dynamic .left .title b {
+  display: inline-block;
+  height: 25px;
+  width: 5px;
+  background: #5AA700;
+  vertical-align: top;
+}
+#main .dynamic .left .title span {
+  font-size: 18px;
+  margin-left: 8px;
+  display: inline-block;
+}
+#main .dynamic .left .main {
+  text-align: center;
+  margin-top: 200px;
+}
+#main .dynamic .right {
+  width: 270px;
+}
+#main .dynamic .right .vip {
+  border: 1px solid #D4AF85;
+  background: #FFFBF6;
+  border-radius: 5px;
+  padding: 20px;
+  color: #929190;
+  margin-bottom: 30px;
+}
+#main .dynamic .right .vip > div + div {
+  margin-top: 15px;
+}
+#main .dynamic .right .vip > div:nth-child(2) {
+  background: #C8A06A;
+  text-align: center;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 18px;
+  border-radius: 5px;
+}
+#main .dynamic .right .vip .pic-words-1 > div.rf b {
+  background: url(../img/person/vipfocusIndividual.png) -40px 0;
+}
+#main .dynamic .right .vip .pic-words-2 > div.lf b {
+  background: url(../img/person/vipfocusIndividual.png) -80px 0;
+}
+#main .dynamic .right .vip .pic-words-2 > div.rf b {
+  background: url(../img/person/vipfocusIndividual.png) -120px 0;
+}
+#main .dynamic .right .circle .title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+#main .dynamic .right .circle .title b {
+  display: inline-block;
+  height: 25px;
+  width: 5px;
+  background: #5AA700;
+  vertical-align: top;
+}
+#main .dynamic .right .circle .title span {
+  font-size: 18px;
+  margin-left: 8px;
+  display: inline-block;
+}
+#main .dynamic .right .circle .title div {
+  margin-top: 3.5px;
+}
+#main .dynamic .right .circle .title div i {
+  display: inline-block;
+  vertical-align: top;
+  height: 14px;
+  margin-top: 3.5px;
+  margin-right: 5px;
+  width: 14px;
+  background: url(../img/person/paopao-landingpage.png) -60px -160px;
+}
+#main .dynamic .right .circle .title div em {
+  font-style: normal;
+}
+#main .dynamic .right .circle div.figure {
+  margin-top: 20px;
+}
+#main .praise {
+  display: none;
+  height: 324px;
+  line-height: 324px;
+  text-align: center;
+  color: #929190;
+  font-size: 20px;
+}
+#main .praise img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#main .take {
+  display: none;
+  height: 324px;
+  line-height: 324px;
+  text-align: center;
+  color: #929190;
+  font-size: 20px;
+}
+#main .take img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#main .upload {
+  display: none;
+  height: 324px;
+  line-height: 324px;
+  text-align: center;
+  color: #929190;
+  font-size: 20px;
+}
+#main .upload img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#footer {
+  border-top: 1px solid #aaa;
+  margin: 30px 0;
+}
+#footer .container {
+  width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+#footer .container ul {
+  margin: 30px 0 15px 215px;
+}
+#footer .container ul li {
+  width: 90px;
+  float: left;
+}
+#footer .container ul li b {
+  border-right: 1px solid #aaa;
+  margin-left: 10px;
+}
+#footer .container div {
+  color: #999999;
+}

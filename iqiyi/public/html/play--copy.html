@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="../css/play.css">-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <script src="../js/CommentCoreLibrary.js"></script>
+    <style>
+        #commentCanvas{
+            height:50%;
+        }
+        .cf{
+            display:table;
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<!--最外层的容器-->
+<div id="debugger">
+    <!--弹幕发射按钮-->
+    <div id="w-main" class="debugger-window" tabindex="0">
+        <div class="sidebar">
+            <h2>Tests</h2>
+            <div>
+                <a id="test-6" class="button" href="javascript:;">Run Test 6</a>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+
+        <!--视频容器-->
+        <div id="player-unit">
+            <div class="cf"></div>
+            <div class="m20 abp" id="player">
+                <div id="c-region" style="display:none;">640x480</div>
+                <div id="commentCanvas" class="container"></div>
+                <video id="abpVideo" autobuffer="true" data-setup="{}" width="100%" height="100%" style="z-index:-1;width:100%;height:100%;top:0;left:0;right:0;bottom:0;" preload="auto" controls autoplay>
+                    <source src="../video/birds.mp4">
+                    <p class="warning">Your browser does not support HTML5 video.</p>
+                </video>
+            </div>
+            <div class="controls">
+                <form action="">
+                    <p>选择颜色:<select name="" id="chose">
+                        <option value="0xff0000">红色</option>
+                        <option value="0x7fff00">绿色</option>
+                        <option value="0xffff56">黄色</option>
+                    </select>
+                        输入内容:<input type="" name="main" id="main" value="" />
+                        <input type="button" id="send" value="发送">
+                    </p>
+                </form>
+            </div>
+
+        </div>
+        <!--弹幕发射的容器-->
+        <div id="w-code" class="debugger-window" style="display:none;padding:30px;">
+            <div style="position:absolute; right:10px; top:15px; bottom:0; width:45%">
+                <h2>Debug Output</h2>
+                <div id="debugger-output" class="debug-out" style="margin:10px;">
+                </div>
+            </div>
+            <div class="iw" style="position:absolute; left:10px; top:15px; bottom:0; width:45%">
+                <h2>Input Window</h2>
+                <div id="debugger-input" style="padding:10px;">
+                    <div id="debugger-input-area"class="input" contenteditable="true">
+
+                    </div>
+                    <div id="debugger-run" class="button">Run</div>
+                </div>
+                <p>Filters:</p>
+                <div id="preset-1-run" class="button">Filter pool = 0</div>
+                <div id="preset-2-run" class="button">Niconico Clickable</div>
+                <div id="preset-3-run" class="button">Debug Mode with borders</div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>
+<div id="foot"></div>
+</body>
+<script>
+    //将form数据转对象
+    function parse_obj(str) {
+        var arr=str.split("&");
+        var brr=[],obj={};
+        for(var i=0;i<arr.length;i++){
+            brr=arr[i].split("=");
+            obj[brr[0]]=brr[1];
+        }
+        return obj;
+    }
+    //对象转form格式数据
+    function parse_str(obj){
+        var str="";
+        for(key in obj){
+            str+=key+"="+obj[key]+"&";
+        }
+        str=str.slice(0,str.length-1);
+        return str;
+    }
+    //play1("birds.mp4","birds.mp4");
+    window.addEventListener('load', function () {
+        //加载前端弹幕发射功能
+        (function(){
+            function $(id){
+                return document.getElementById(id);
+            }
+            var CM = new CommentManager($('commentCanvas'));
+            abpVideo.onloadeddata=function(){
+                CM.init();
+                CM.start();
+                window.CM = CM;
+                var list={
+                    "dur": 3000,
+                    "size": 25,
+                    "stime": 0,
+                    "mode": 1
+                };
+
+
+                //把弹幕发送到自己的屏幕上
+                $("send").addEventListener("click",function(e){
+                    if($("main").value==""){
+                        console.log("输入为空");
+                        return ;
+                    }
+                    else{
+                        list.text=$("main").value;
+                        //颜色必须是十进制的数字
+                        list.color=(parseInt(($("chose").value)));
+                        CM.send(list);
+                        e.stopPropagation();
+                        e.preventDefault();
+
+                    }
+                })
+            };
+        }());
+
+        //定义发射按钮的回调函数
+        function handle(e){
+
+        }
+    });
+</script>
+
+</html>

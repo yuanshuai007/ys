@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width:100px;
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+<h2>文件上传演练</h2>
+<div id="result">
+    <!-- 这里用来显示读取结果 -->
+    <div id="inResult">
+        <div id="inImgs"></div>
+        <div id="imgInfo"></div>
+    </div>
+</div>
+
+<input type="text" id="txtImgSrc" /><!--显示图片信息-->
+<input type="button" id="btnRemove" />
+<button id="btnBrowse" onClick="onFile()">Browse...</button>
+<input type="file" id="file_input" />
+<script type="text/javascript">
+    var result = document.getElementById("result");
+    var input = document.getElementById("file_input");
+    var inResult = document.getElementById('inResult');
+
+
+    input.addEventListener('change',readFile,false);
+
+    function onFile(){
+        document.getElementById('file_input').click(); //打开<input type="file" id="file_input" />
+    }
+
+    function readFile(){
+        var file = this.files[0];
+        //var fsize = parseInt((file.size)/1024); //计算图片大小，默认是B，转换成KB
+//        if(!/image\/\w+/.test(file.type)){
+//            alert("请确保文件为图像类型");
+//            return false;
+//        }
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+
+        reader.onload = function(e){
+            //alert(this.result);
+            inImgs.innerHTML = '<img src="'+this.result+'" alt="" width="198px" height="250px" id="img"/>'; //显示图片
+            //var arr = input.value.split('\\'); //分割图片路径
+//            document.getElementById('result').style.display="block";
+//            document.getElementById('txtImgSrc').value = arr[arr.length-1]; //取数组最后部分 - 图片名字.jpg
+//            document.getElementById('imgInfo').innerHTML = arr[arr.length-1]+"<br/>("+fsize+"kb)"; //显示图片名字加图片大小
+
+        }
+    }
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

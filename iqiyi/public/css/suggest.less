@@ -1,0 +1,310 @@
+/*通用css*/
+@color-core:#699F00;
+* {
+    box-sizing: border-box;
+}
+ul, li, p, body,dl,dt,dd{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    font: 14px/1.5 Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+}
+.container{
+    width:1380px;
+    margin:0 auto;
+}
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+img{
+    vertical-align:bottom;
+}
+#header{
+    padding:10px 0;
+    width:970px;
+    margin:0 auto;
+    border-bottom:1px solid #ddd;
+    ul{
+        margin-top: 20px;
+        li{
+            float:left;
+            margin-left:15px;
+            width:80px;
+            b{
+                border-right:1px solid #aaa;
+                margin-left:15px;
+            }
+         }
+    }
+}
+
+//头部下面的标题
+#title{
+    width:970px;
+    margin:20px auto;
+    background:#F8F8F8;
+    border:1px solid #DFDFDF;
+    height:33px;
+    >div{
+        height:32px;
+        float:left;
+        padding:5px 10px;
+        cursor:pointer;
+        border-right:1px solid #DFDFDF;
+    }
+    div:hover{
+        color:@color-core;
+    }
+    //点击后的css
+    .click{
+        background:#fff;
+        color:@color-core;
+        border-bottom:none;
+    }
+}
+
+//主体内容
+#content{
+    width:970px;
+    margin:0 auto;
+    .left{
+        width:704px;
+        position:relative;
+        left:0;
+        top:0;
+        height:1360px;
+        .help{
+            //帮助的内容
+            border:1px solid #ddd;
+            background:#FAFAFA;
+            position:absolute;
+            left:0;
+            top:0;
+            width:100%;
+            .list{
+                margin-left:20px;
+                padding:20px 0;
+                b{
+                    display:inline-block;
+                    width:9px;
+                    height:9px;
+                    background:url(../img/suggest/bzImg.gif);
+                    margin-right:5px;
+                }
+                div{
+                    width:80%;
+                    cursor:pointer;
+                    border:1px solid transparent;
+                    padding:5px 0 5px 20px;
+                }
+                div:hover{
+                    background:#FFFFCA;
+                    border:1px solid #aaa;
+                }
+            }
+            //帮助内容的底部
+            h1{
+                border-top:1px solid #ddd;
+                background:#FAFAFA;
+                padding:30px 0;
+                margin:0;
+                //感谢内容
+                .thanks{
+                    color:@color-core;
+                    font-size:16px;
+                    margin-bottom:20px;
+                    margin-left:40px;
+                }
+                //提交按钮
+                .click{
+                    margin-left:40px;
+                    width:203px;
+                    height:25px;
+                    text-align:center;
+                    cursor:pointer;
+                    color:#fff;
+                    font-size:14px;
+                    background:url(../img/suggest/bzBg.png) -240px -31px;
+                }
+            }
+        }
+        .suggest{
+            display:none;
+            position:absolute;
+            left:0;
+            top:0;
+            border:1px solid #ddd;
+            background:#FAFAFA;
+            //下面的四个div
+            >div{
+                padding:20px;
+                border-bottom:1px solid #ddd;
+            }
+            .question{
+                background:#fff;
+                .bg{
+                    display:inline-block;
+                    width:350px;
+                    height:95px;
+                    background:url(../img/suggest/bzBg.png) -650px 0;
+                }
+                .words{
+                    margin-left: -6px;
+                }
+            }
+            //第一步
+            .nth-1{
+                //背景图
+                .bg{
+                    margin-right: 32px;
+                    width:62px;
+                    height:46px;
+                    background:url(../img/suggest/bzBg.png);
+                }
+                .right{
+                    width: 550px;
+                    .select{
+                        margin-top:20px;
+                        input{
+                            margin:0;
+                        }
+                    }
+                }
+
+            }
+            //第二步
+            .nth-2{
+                .bg{
+                    .nth-1 .bg;
+                    background:url(../img/suggest/bzBg.png) -80px 0;
+                }
+                textarea{
+                    margin-top:20px;
+                    width: 520px;
+                    height: 200px;
+                }
+            }
+            //第三步
+            .nth-3{
+                input{
+                    padding-left:5px;
+                }
+                i{
+                    color:#EF904E;
+                    font-style:normal;
+                }
+                .bg{
+                    .nth-1 .bg;
+                    background:url(../img/suggest/bzBg.png) -160px 0;
+                }
+                .content{
+                    >div{
+                        margin-bottom:10px;
+                    }
+                    select{
+                        width:80px;
+                    }
+                }
+            }
+            //提交
+            .submit{
+                text-align: center;
+                font-size: 16px;
+                color:#fff;
+                background:#fff;
+                border-bottom:none;
+                >div{
+                    margin:40px auto;
+                    width:75px;
+                    height:24px;
+                    background:#fff url(../img/suggest/bzBg.png) -321px -61px;
+                }
+
+            }
+        }
+    }
+    .right{
+        margin-left:20px;
+        width:246px;
+        >.top{
+            border:1px solid #ddd;
+            padding:20px 0;
+            margin-bottom:15px;
+            >div{
+                text-align:center;
+            }
+            >div+div{
+                margin-top:15px;
+            }
+            //立刻咨询
+            >div:last-child{
+                margin:0 auto;
+                margin-top:15px;
+                color:#fff;
+                border-radius:5px;
+                width:128px;
+                padding:5px 10px;
+                background:@color-core;
+            }
+        }
+        >.bottom {
+            border: 1px solid #ddd;
+            padding: 20px 10px 20px 15px;
+
+            div{
+                margin-bottom:19px;
+                font-size:12px;
+            }
+            b{
+                display:inline-block;
+                width:5px;
+                height:5px;
+                background:@color-core;
+                vertical-align:middle;
+                margin-right:5px;
+            }
+        }
+    }
+}
+
+//底部
+#footer{
+    border-top:1px solid #aaa;
+    margin:30px 0;
+
+    .container{
+        width:970px;
+        margin:0 auto;
+        text-align:center;
+        ul{
+            margin:30px 0 15px 215px;
+            li{
+                width:90px;
+                float:left;
+                b{
+                    border-right:1px solid #aaa;
+                    margin-left:10px;
+                }
+            }
+        }
+        div{
+            color:#999999;
+        }
+    }
+}

@@ -1,0 +1,223 @@
+.login-share {
+  display: none;
+  width: 462px;
+  min-height: 300px;
+  z-index: 350;
+  position: fixed;
+  left: 50%;
+  top: 30px;
+  margin-left: -251px;
+}
+.login-share div.header {
+  height: 55px;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 20px;
+  background: url(../../img/login/login_bg.png);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.login-share div.header > div:first-child {
+  font-size: 32px;
+  margin-top: -8px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.login-share div.header > div:last-child {
+  line-height: 55px;
+}
+.login-share form {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  background: #fff;
+  font-family: "SimSun";
+  padding: 30px 0;
+}
+.login-share form .form-group {
+  display: flex;
+  align-items: center;
+}
+.login-share form .form-group > div:nth-child(1) {
+  width: 25%;
+  text-align: right;
+}
+.login-share form .form-group > div:nth-child(1) span {
+  padding-right: 5px;
+}
+.login-share form .form-group > div:nth-child(2) {
+  width: 50%;
+}
+.login-share form .form-group > div:nth-child(2) input {
+  height: 28px;
+  width: 100%;
+}
+.login-share form .form-group > div:nth-child(3) {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.login-share form .form-group > div:nth-child(3) b {
+  margin-left: 5px;
+  text-align: left;
+}
+.login-share form .form-group > div:nth-child(3) i {
+  font-style: normal;
+  color: #F87A1F;
+  padding-left: 5px;
+}
+.login-share form input {
+  padding-left: 5px;
+}
+.login-share form > div:first-child {
+  margin-bottom: 20px;
+}
+.login-share form .percent {
+  font-size: 14px;
+  text-align: left;
+}
+.login-share form .percent .percent25 {
+  width: 22%;
+  display: inline-block;
+  text-align: right;
+}
+.login-share form .percent .percent50 {
+  width: 50%;
+}
+.login-share form .percent .percent50-12 {
+  width: 50%;
+  height: 25px;
+}
+.login-share form > div.password {
+  margin: 20px auto;
+  width: 50%;
+  text-align: left;
+}
+.login-share form > div.password input {
+  margin: 0;
+  margin-top: 1.5px;
+  vertical-align: top;
+}
+.login-share form > div.password > div {
+  float: right;
+  font-size: 0;
+}
+.login-share form > div.password > div > span,
+.login-share form > div.password > div b {
+  font-size: 14px;
+}
+.login-share form > div.password b {
+  border-right: 1px solid #aaa;
+  margin: 0 10px;
+}
+.login-share form > div.password span {
+  cursor: pointer;
+  color: #699F00;
+}
+.login-share form > div.login {
+  width: 50%;
+  margin: 0 auto;
+}
+.login-share form > div.login input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #699F00;
+  color: #fff;
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+#zzc {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 300;
+}
+#register > form {
+  font-size: 14px;
+}
+#register > form b {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  vertical-align: middle;
+}
+#register > form #auth {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+#register > form #auth > div:nth-child(1) {
+  width: 25%;
+  text-align: right;
+}
+#register > form #auth > div:nth-child(1) span {
+  padding-right: 5px;
+}
+#register > form #auth > div:nth-child(2) {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+#register > form #auth > div:nth-child(2) > input:nth-child(1) {
+  width: 40%;
+  height: 28px;
+}
+#register > form #auth > div:nth-child(2) > canvas:nth-child(2) {
+  margin: 0 14px;
+  border: 0.5px solid #A9A9A9;
+}
+#register > form #auth > div:nth-child(2) > span:nth-child(3) {
+  width: 30px;
+  height: 28px;
+  border: 0.5px solid #A9A9A9;
+  cursor: pointer;
+  background: url(../../img/login/thirdLoginIcon.png) -72px -35px;
+}
+#register > form #auth > div:nth-child(3) {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+#register > form #auth > div:nth-child(3) b {
+  margin-left: 5px;
+}
+#register > form #auth > div:nth-child(3) i {
+  font-style: normal;
+  color: #F87A1F;
+  padding-left: 5px;
+}
+#register > form > div:nth-child(4) {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+#register > form > div:nth-child(4) input {
+  height: 28px;
+  width: 100%;
+}
+#register > form > div:nth-child(4) span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #699F00;
+}
+#register > form > div:nth-child(5) {
+  width: 50%;
+  margin: 15px auto;
+}
+#register > form > div:nth-child(5) span:nth-child(2) {
+  margin-left: 0;
+  margin-right: 7px;
+}
+#register > form > div:nth-child(5) span:nth-child(3) {
+  cursor: pointer;
+}

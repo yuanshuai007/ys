@@ -1,0 +1,49 @@
+@import "common.less";
+#navbar {
+    background: #222222;
+    text-align: center;
+    height: 46px;
+    width:100%;
+    .logo{
+        margin-top:4px;
+    }
+
+}
+#navbar .search input {
+    height: 30px;
+    width: 230px;
+    padding: 5px;
+    border:1px solid #5AA700;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    background:#E3E3E3;
+    outline:none;
+}
+#navbar .search input:hover{
+    background:#fff;
+}
+#navbar .search input:focus{
+    background:#fff;
+}
+/*搜索框的按钮*/
+#search{
+    margin-top: 8px;
+    margin-left: 161px;
+    >div{
+        width:36px;
+        height:30px;
+        background:url(../img/help/srch_btn-new.png);
+    }
+}
+/*导航栏中的标签页*/
+#navbar .nav-tab li {
+    float: left;
+    color: #fff;
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+#navbar .nav-tab li a {
+    color: #fff;
+    cursor:pointer;
+}

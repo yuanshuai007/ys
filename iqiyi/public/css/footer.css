@@ -1,0 +1,63 @@
+/*通用css*/
+* {
+  box-sizing: border-box;
+}
+ul,
+li,
+p,
+body,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font: 14px/1.5 Tahoma, Helvetica, Arial, "\5FAE\8F6F\96C5\9ED1", sans-serif;
+}
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+.lf {
+  float: left;
+}
+.rf {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  vertical-align: bottom;
+}
+#footer {
+  border-top: 1px solid #aaa;
+  margin: 30px 0;
+}
+#footer .container {
+  width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+#footer .container ul {
+  margin: 30px 0 15px 215px;
+}
+#footer .container ul li {
+  width: 90px;
+  float: left;
+}
+#footer .container ul li b {
+  border-right: 1px solid #aaa;
+  margin-left: 10px;
+}
+#footer .container div {
+  color: #999999;
+}

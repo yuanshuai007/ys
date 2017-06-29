@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/person.css">
+</head>
+<body>
+<!--导航条-->
+<div id="navbar">
+    <div class="container clear">
+        <!--导航条的logo部分-->
+        <div class="logo lf">
+            <img src="../img/help/logo108x35_share.png" alt="">
+        </div>
+        <!--搜索部分-->
+        <div class="search lf" id="search">
+            <input type="text" placeholder="功夫瑜伽" class="lf">
+            <div  class="lf"></div>
+        </div>
+        <!--按钮部分-->
+        <ul class="nav-tab rf" id="button">
+            <li><a href="#">开通VIP</a></li>
+            <li><a href="#">上传</a><span class="circle"></span><span class="caret"></span></li>
+            <li><a href="#">消息</a><span class="caret"></span></li>
+            <li><a href="#">播放记录</a><span class="caret"></span></li>
+        </ul>
+    </div>
+</div>
+<!--个人介绍-->
+<div id="person">
+    <!--背景图-->
+    <div class="bg">
+        <div class="container">
+            <div class="head-pic">
+                <img src="../img/person/male-70.png" alt="">
+                <form action="/upload" enctype="multipart/form-data" method="post" id="form">
+                    <input type="file" name="upload">
+                </form>
+            </div>
+            <!--<input type="button" value="上传" id="upload">-->
+            <div id="username"></div>
+            <div class="signature">
+                <span>个性签名</span><b></b>
+            </div>
+            <div id="enter" class="input" style="display:none">
+                <!--&lt;!&ndash;显示字的个数&ndash;&gt;-->
+                <!--<div id="count">-->
+                    <!--<span>0</span>-->
+                    <!--<span></span>-->
+                    <!--<span>/70</span>-->
+                <!--</div>-->
+                <input type="text" id="enter_content">
+                <span class="save">保存</span>
+                <span class="cancel">取消</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--标题-->
+<div id="title">
+    <div class="container clear">
+        <div>动态</div>
+        <div>赞</div>
+        <div>订阅</div>
+        <div>上传</div>
+    </div>
+</div>
+<!--主体-->
+<div id="main">
+    <div class="container">
+        <!--动态-->
+        <div class="dynamic clear">
+            <div class="left lf">
+                <div class="title">
+                    <b></b>
+                    <span>泡泡动态</span>
+                </div>
+                <div class="main">
+                    <div> <img src="../img/person/empty.png" alt="">
+                    </div>
+                   <p>暂时还没有发布动态呀!</p>
+                </div>
+            </div>
+            <div class="right lf">
+                <div class="vip">
+                    <div>您尚未开通VIP会员</div>
+                    <div>开通VIP会员</div>
+                    <div>会员权益:</div>
+                    <div class="pic-words-1 clear">
+                        <div class="lf mix">
+                            <b></b>
+                            <span>免费片库</span>
+                        </div>
+                        <div class="rf mix">
+                            <b></b>
+                            <span>跳过广告</span>
+                        </div>
+                    </div>
+                    <div class="pic-words-2 clear">
+                        <div class="mix lf">
+                            <b></b>
+                            <span>尊贵身份</span>
+                        </div>
+                        <div class="mix rf">
+                            <b></b>
+                            <span>免费点播</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle">
+                    <div class="title">
+                        <b></b>
+                        <span>热门圈子</span>
+                        <div class="rf">
+                            <i></i>
+                            <em>换一换</em>
+                        </div>
+                    </div>
+                    <div class="figure clear">
+                        <div class="figure-left lf">
+                            <img src="../img/person/ppopen_58a8ea3af6882e5fa826806a_0.jpg" alt="">
+                        </div>
+                        <div class="figure-right lf">
+                            <div>
+                                <span>鹿晗</span>
+                                <b class="rf">进圈子</b>
+                            </div>
+                            <div>
+                                <b></b>
+                                <span>1299.2万</span>
+                                <b></b>
+                                <span>237.1万</span>
+                            </div>
+                            <div>
+                                跑男里迪丽热巴和鹿晗就是节目组给强行组的CP。明明长的就不配。能不能不要谈论这个了。受不了你们
+                            </div>
+                        </div>
+                    </div>
+                    <div class="figure clear">
+                        <div class="figure-left lf">
+                            <img src="../img/person/p_1055761_m_601_m9_160_160.jpg" alt="">
+                        </div>
+                        <div class="figure-right lf">
+                            <div>
+                                <span>赵丽颖</span>
+                                <b class="rf">进圈子</b>
+                            </div>
+                            <div>
+                                <b></b>
+                                <span>966万</span>
+                                <b></b>
+                                <span>195.6万</span>
+                            </div>
+                            <div>
+                                这是白凤九被他 爹打了[微笑][愉快]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="figure clear">
+                        <div class="figure-left lf">
+                            <img src="../img/person/ppopen_586d11bd74d579537661a82e_0.jpg" alt="">
+                        </div>
+                        <div class="figure-right lf">
+                            <div>
+                                <span>杨洋</span>
+                                <b class="rf">进圈子</b>
+                            </div>
+                            <div>
+                                <b></b>
+                                <span>532.3万</span>
+                                <b></b>
+                                <span>202.6万</span>
+                            </div>
+                            <div>
+                                别人家的孩子都是怎样养成的呢？为什么会那么帅？？？
+                            </div>
+                        </div>
+                    </div>
+                    <div class="figure clear">
+                        <div class="figure-left lf">
+                            <img src="../img/person/p_1537_m_601_m2_160_160.jpg" alt="">
+                        </div>
+                        <div class="figure-right lf">
+                            <div>
+                                <span>AngelaBaby</span>
+                                <b class="rf">进圈子</b>
+                            </div>
+                            <div>
+                                <b></b>
+                                <span> 617.9万</span>
+                                <b></b>
+                                <span>75.6万</span>
+                            </div>
+                            <div>
+                                雅典娜女神😘😘😘雅典娜女神😘😘😘
+                            </div>
+                        </div>
+                    </div>
+                    <div class="figure clear">
+                        <div class="figure-left lf">
+                            <img src="../img/person/999000008342_130x130.png" alt="">
+                        </div>
+                        <div class="figure-right lf">
+                            <div>
+                                <span>奔跑吧</span>
+                                <b class="rf">进圈子</b>
+                            </div>
+                            <div>
+                                <b></b>
+                                <span> 73.1万</span>
+                                <b></b>
+                                <span> 57.2万</span>
+                            </div>
+                            <div>
+                                郑凯50分
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="praise">
+            <img src="../img/person/videoUp_icon.png" alt="">
+            <span>还没有赞的视频</span>
+        </div>
+        <div class="take">
+            <img src="../img/person/videoUp_icon.png" alt="">
+            <span>还没有订阅视频，随便看看</span>
+        </div>
+        <div class="upload">
+            <img src="../img/person/videoUp_icon.png" alt="">
+            <span>还没有上传视频，去上传</span>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container clear">
+        <ul class="clear">
+            <li>
+                <a href="#">公司介绍</a>
+                <b></b>
+            </li>
+            <li>
+                <a href="#">新闻动态</a>
+                <b></b>
+            </li>
+            <li>
+                <a href="#">联系方式</a>
+                <b></b>
+            </li>
+            <li>
+                <a href="#">招聘英才</a>
+                <b></b>
+            </li>
+            <li>
+                <a href="#">开放平台</a>
+                <b></b>
+            </li>
+            <li>
+                <a href="#">帮助中心</a>
+            </li>
+        </ul>
+        <div>
+            Copyright©2017爱奇艺All Rights Reserved
+
+        </div>
+    </div>
+</div>
+<script src="../js/person.js"></script>
+</body>
+</html>

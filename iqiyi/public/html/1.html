@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #player{
+            width:1200px;
+            height:480px;
+            background:#333;
+            position:relative;
+        }
+        .remain{
+            position:absolute;
+            top:10px;
+            right:10px;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+		1.将视频充满整个div style="object-fit:fill"
+		2.视频的宽度和高度只有加载完成后才能获取到正确的值
+-->
+<div id="player">
+    <video controls=true>不支持h5</video>
+    <div class="remain">
+        广告剩下的秒数:
+        <span class="seconds"></span>
+    </div>
+    <script>
+        function play1(ad,tv){
+            //视频播放对象
+            var video=player.querySelector("video");
+            //广告计时对象
+            var remain=player.querySelector(".remain");
+            //1.从cookie里面获取uid的vip权限
+            if(true){
+                //ad:广告的地址
+                video.src=ad;
+                //广告视频加载完成事件    广告计时对象的绝对位置
+                video.onloadeddata=function(){
+                    video_width=video.offsetWidth;
+                    ad_offset=(player.offsetWidth-video.offsetWidth)/2+50;
+                    remain.style.right=ad_offset+"px";
+                    //video居中
+                    video.style.marginLeft=(player.offsetWidth-video.offsetWidth)/2+"px";
+                    //ad倒计时初始值
+                    remain.children[0].innerHTML=parseInt(video.duration);
+
+                };
+                //点击事件
+                function play_pause(){
+                    if(video.paused===true){
+                        video.play();
+                    }
+                    else{
+                        video.pause();
+                    }
+                }
+                video.onclick=play_pause;
+                window.onkeydown=function(e){
+                    console.log(e.keyCode);
+                    switch(e.keyCode){
+                        case 32:
+                            play_pause();
+                            break;
+                        case 39:
+                            video.currentTime+=3;
+                            break;
+                        case 37:
+                            video.currentTime-=3;
+                            break;
+                        case 38:
+
+                            if(video.volume<=0.9){
+                                video.volume+=0.1;
+                            }
+                            break;
+                        case 40:
+                            if(video.volume>=0.1){
+                                video.volume-=0.1;
+                            }
+
+                            break;
+                    }
+                }
+                //广告倒计时
+                var time=null;
+                function fun1(){
+                    //ad倒计时器
+                    time=setInterval(function(){
+                        remain.children[0].innerHTML=parseInt(video.duration-video.currentTime);
+                        //if(num===1){
+                        clearInterval(time);
+                        time=null;
+                        //}
+                    },1000);
+                    console.log(1);
+                }
+                video.addEventListener("playing",fun1);
+
+                //广告播放
+                video.play();
+                //广告播放完了 播放视频
+                var num=0;//视频播放的次数
+                video.onended=function(){
+                    if(num===0){
+                        //广告播放完之后
+                        //1.清除定时器
+                        video.removeEventListener("playing",fun1);
+                        clearInterval(time);
+                        //time=null;
+                        //fun1=null;
+                        //2.隐藏广告计时器
+                        remain.style.display="none";
+                        //播放视频
+                        video.src=tv;
+                        video.controls=true;
+                        video.play();
+                        num++;
+
+                    }
+                    else if(num===1){
+                        video.pause();
+                    }
+
+                };
+            }
+        }
+        play1("birds.mp4","birds.mp4");
+
+
+
+        //2.视频播放中的事件
+        //video.onplaying=function(){
+        //		remain.children[0].innerHTML=video.duration-video.currentTime;
+        //};
+
+
+
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

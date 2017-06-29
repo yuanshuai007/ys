@@ -1,0 +1,334 @@
+/*通用css*/
+@color-core:#699F00;
+* {
+    box-sizing: border-box;
+}
+ul, li, p, body,dl,dt,dd{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    font: 14px/1.5 Tahoma,Helvetica,Arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;
+}
+.container{
+    width:970px;
+    margin:0 auto;
+}
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+img{
+    vertical-align:bottom;
+}
+//带小图标的title
+.b-title{
+    b{
+        display:inline-block;
+        width:40px;
+        height:36px;
+        background:url(../img/help/icon-help.png) 0 -50px;
+    }
+    span{
+        vertical-align: top;
+        font-size: 20px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .rf{
+        color:#5FA92A;
+    }
+}
+/*导航条*/
+#navbar {
+    background: #222222;
+    text-align: center;
+    height: 46px;
+    width:100%;
+    .logo{
+        margin-top:4px;
+    }
+
+}
+#navbar .search input {
+    height: 30px;
+    width: 230px;
+    padding: 5px;
+    border:1px solid #5AA700;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    background:#E3E3E3;
+    outline:none;
+}
+#navbar .search input:hover{
+    background:#fff;
+}
+#navbar .search input:focus{
+    background:#fff;
+}
+/*搜索框的按钮*/
+#search{
+    margin-top: 8px;
+    margin-left: 161px;
+    >div{
+        width:36px;
+        height:30px;
+        background:url(../img/help/srch_btn-new.png);
+    }
+}
+
+/*导航栏中的标签页*/
+#navbar .nav-tab li {
+    float: left;
+    color: #fff;
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+#navbar .nav-tab li a {
+    color: #fff;
+    cursor:pointer;
+}
+
+#business{
+    background:#F6F6F5 url(../img/help/helpBanner.jpg) no-repeat;
+    .container{
+        padding-top:30px;
+    }
+    //搜索
+    .search{
+        margin-left:180px;
+        input{
+            width: 470px;
+            height:40px;
+            padding: 5px;
+            border:1px solid #5AA700;
+            border-top-left-radius:2px;
+            border-bottom-left-radius:2px;
+            outline:none;
+        }
+        //按钮
+        >div{
+            width:140px;
+            height:40px;
+            background:#5AA700;
+            >div{
+                width:20px;
+                height:20px;
+                background:url(../img/help/search.png);
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 6px;
+                margin-left: 5px;
+                color:#fff;
+            }
+        }
+    }
+    //标题
+    .title{
+        margin:30px 0;
+        span{
+            font-size: 20px;
+            margin-left: 20px;
+        }
+    }
+    //图标
+    .pic{
+        padding: 0 20px;
+        >div{
+            float:left;
+            width:25%;
+            text-align:center;
+            margin-bottom: 20px;
+            >p{
+                font-size:18px;
+                margin-top: 15px;
+            }
+        }
+        >div:nth-child(5),>div:nth-child(6),>div:nth-child(7),>div:nth-child(8){
+            margin-bottom:6px;
+        }
+    }
+}
+//自助服务
+#byself{
+    //图标
+    .icon{
+        margin:20px 0;
+        b{
+            display:inline-block;
+            width:40px;
+            height:34px;
+            background:url(../img/help/icon-help.png) 0 -100px;
+        }
+        span{
+            font-size: 20px;
+            vertical-align: top;
+            margin-top: 2px;
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+    //主要内容
+    .main{
+        margin-left:15px;
+        >div{
+            float:left;
+            padding:19px 15px;
+            border:1px solid #B7E071;
+            margin-right:15px;
+            width:223.5px;
+            margin-bottom:15px;
+            >div{
+                float:left;
+            }
+            >.left{
+              margin-top:14px;
+            }
+            >.right{
+                width: 126px;
+                margin-left: 15px;
+                p{
+                    //height:42px;
+                    color:#999999;
+                }
+                h4{
+                    margin:0;
+                    margin-bottom:15px;
+                    font-weight: normal;
+                }
+            }
+        }
+        >div:hover{
+            box-shadow:1px 1px 1px #ddd;
+        }
+    }
+}
+
+//问题
+#question{
+    margin-top: 5px;
+    .container{
+        border-top:1px solid #ddd;
+        border-bottom:1px solid #ddd;
+        padding:20px 0;
+        ul{
+            padding:15px 0;
+            padding-bottom:0;
+            li{
+                float:left;
+                width:50%;
+                margin-bottom:10px;
+                //文字前的小绿点
+                b{
+                    display:inline-block;
+                    width:4px;
+                    height:4px;
+                    background:#99D337;
+                    vertical-align: middle;
+                    margin-right:5px;
+                }
+            }
+            li.margin{
+                margin-bottom:0;
+            }
+        }
+    }
+
+}
+
+//联系我们
+#contact{
+    .container{
+        padding:20px 0;
+        .b-title{
+            margin-bottom:20px;
+            b{
+                vertical-align: text-bottom;
+                margin-bottom: 5px;
+                height:33px;
+                background:url(../img/help/icon-help.png);
+            }
+        }
+        .content{
+            //外层的三个大div
+            >div{
+                width:33%;
+                text-align:left;
+                padding-left:90px;
+
+                >div{
+                    margin-bottom:10px;
+                    span{
+                        color:#999;
+                    }
+                    //按钮
+                    i{
+                        font-style:normal;
+                        padding:5px 10px;
+                        background:#5AA700;
+                        border-radius:5px;
+                        color:#fff;
+                    }
+                    //电话图标
+                    b{
+                        display:inline-block;
+                        width:24px;
+                        height:24px;
+                        background:url(../img/help/icon-help.png) 0 -150px;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            >div:nth-child(2){
+                border-right: 1px dotted #ddd;
+                border-left: 1px dotted #ddd;
+            }
+        }
+    }
+
+}
+
+//底部
+#footer{
+    border-top:1px solid #aaa;
+    margin:30px 0;
+
+    .container{
+        width:970px;
+        margin:0 auto;
+        text-align:center;
+        ul{
+            margin:30px 0 15px 215px;
+            li{
+                width:90px;
+                float:left;
+                b{
+                    border-right:1px solid #aaa;
+                    margin-left:10px;
+                }
+            }
+        }
+        div{
+            color:#999999;
+        }
+    }
+}

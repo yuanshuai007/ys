@@ -1,0 +1,1134 @@
+@color-core:#699F00;
+//封装的类
+//20的上下外边距
+.margin-20{
+    margin:20px 0;
+}
+
+//综艺部分的图片下面的文字格式
+.dd-words-down {
+    background: #F2F2F2;
+    padding: 8px 5px;
+    > p:last-child {
+        color: #999999;
+    }
+}
+
+//综艺部分的标题的logo
+.variety-title-logo{
+    color:#699F00;
+    //图标
+    >b{
+        display:inline-block;
+        width:15px;
+        height:25px;
+        background:url(../../img/tit-playBtn.png);
+    }
+    //综艺
+    >span:nth-child(2){
+        font-size:30px;
+    }
+    //更多
+    >span:nth-child(3){
+        margin-left:10px;
+        font-size:15px;
+    }
+    >span:last-child{
+        font-size:18px;
+    }
+}
+
+//综艺的小标题--没有三角logo的
+.variety-little-title{
+    padding:8px 0;
+    border-bottom:1px solid #ddd;
+    //左边
+    >div{
+        margin-top:6px;
+        >a{
+            color:#699F00;
+        }
+        >a:first-child{
+            //综艺
+            >span:nth-child(1){
+                font-size:25px;
+            }
+        }
+        >a:last-child{
+            //更多
+            >span:nth-child(1){
+                margin-left:10px;
+                font-size:15px;
+            }
+            // >
+            >span:last-child{
+                font-size:18px;
+            }
+        }
+
+
+    }
+    //文字链接列表
+    >ul{
+        margin-left:30px;
+        margin-top:16px;
+        >li{
+            float:left;
+            margin-right:10px;
+            font-size:15px;
+            >b{
+                margin-left:5px;
+                display:inline-block;
+                width:14px;
+                height:14px;
+                background:url(../../img/iqiyi/divide-i.png);
+            }
+        }
+    }
+}
+
+//综艺的大标题--有三角logo的
+.variety-title{
+    padding:8px 0;
+    border-bottom:2px solid #8AC024;
+    //左边
+    >div{
+        >a{
+            .variety-title-logo;
+        }
+
+    }
+    //文字链接列表
+    >ul{
+        margin-left:30px;
+        margin-top:16px;
+        >li{
+            float:left;
+            margin-right:10px;
+            font-size:15px;
+            >b{
+                margin-left:5px;
+                display:inline-block;
+                width:14px;
+                height:14px;
+                background:url(../../img/iqiyi/divide-i.png);
+            }
+        }
+    }
+}
+
+//综艺的右边标题
+.variety-right-title{
+    padding: 8px 0;
+    border-bottom: 2px solid #8AC024;
+    a{
+        .variety-title-logo;
+        >span:last-child{
+            font-size:15px;
+            margin-left: 6px;
+        }
+    }
+}
+
+//综艺核心
+.variety-core{
+    //左边的标题
+    >.title{
+        .variety-title;
+    }
+    //主体部分
+    >.body{
+        margin-top:20px;
+        //左边的大图
+        >div.lf{
+            margin-right:12px;
+            //图片
+            >dt{
+                position:relative;
+                >span{
+                    position:absolute;
+                    display:inline-block;
+                }
+                //today
+                >span:nth-child(1){
+                    left:0;
+                    top:0;
+                    width:125px;
+                    height:45px;
+                    background:url(../../img/icon/icon-today.png);
+                }
+                //自制
+                >span:nth-child(2){
+                    .byself;
+                }
+                //1080p
+                >span:nth-child(5){
+                    .p-1080;
+                }
+                //03-30期
+                >span:nth-child(6){
+                    .stage;
+                }
+            }
+            //文字
+            >dd{
+                .dd-words-down;
+            }
+        }
+        //右边的图片列表
+        >div.rf{
+            width:780px;
+            >dl{
+                margin-left:15px;
+                margin-bottom:15px;
+                >dt{
+                    width:180px;
+                    height:101px;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                >dt{
+                    position:relative;
+                }
+                >dd{
+                    .dd-words-down;;
+                }
+            }
+        }
+
+    }
+}
+
+//电影
+.movie{
+    .body{
+        margin-top:30px;
+    }
+    //左边
+    >.left{
+        width:1180px;
+        >.body{
+            dl{
+                margin-left:20px;
+                margin-bottom:20px;
+                dt{
+                    position:relative;
+                }
+                dd{
+                    p:first-child{
+                        //平分数字
+                        span{
+                            font-family:"Georgia";
+                            color:#FF722C;
+                            i{
+                                font-style:normal;
+                                font-size:18px;
+                            }
+                            em{
+                                font-family:"Georgia";
+                                float:right;
+                                font-size:14px;
+                                margin-top:4px;
+                            }
+                        }
+                    }
+                }
+            }
+            dl:nth-child(7),dl:first-child{
+                margin-left:0;
+            }
+        }
+    }
+    //右边
+    >.right{
+        //标题
+        >.variety-right-title{
+            >div{
+                >a{
+                    >span:last-child{
+                        margin-left:0;
+                    }
+                }
+            }
+        }
+        //主体
+        >.body{
+            margin-top:30px;
+            //电影排行榜
+            ul{
+                li{
+                    i,span{
+                        padding:1px 6px;
+                        border-radius:3px;
+                        background:@color-core;
+                        font-style:normal;
+                        color:#fff;
+                    }
+                    span{
+                        background:#A1A1A1;
+                    }
+                }
+                li+li{
+                    margin-top:14px;
+                }
+                b{
+                    float:right;
+                }
+            }
+            //图片
+            dl{
+                margin-top:27px;
+            }
+        }
+    }
+}
+
+//动漫图片四联排:上面2个下面2个
+.cartoon-pic-4{
+    width:380px;
+    margin-top:20px;
+    >dl:first-child,dl:nth-child(2){
+        margin-bottom:15px;
+    }
+    >dl:first-child,dl:nth-child(3){
+        margin-right:20px;
+    }
+    >dl{
+        >dt{
+            position:relative;
+        }
+        dd{
+            background: #F2F2F2;
+            height:35px;
+            line-height:35px;
+            padding-left:10px;
+        }
+    }
+}
+
+//动漫图片三联排
+.cartoon-pic-3{
+    width:580px;
+    margin-top:20px;
+    >dl:first-child,dl:nth-child(2){
+        margin-bottom:15px;
+    }
+    >dl:nth-child(2){
+        margin:0 20px;
+    }
+    >dl{
+        >dt{
+            position:relative;
+        }
+        dd{
+            background: #F2F2F2;
+            height:35px;
+            line-height:35px;
+            padding-left:10px;
+        }
+    }
+}
+
+//动漫图片两联排
+.cartoon-pic-2{
+    width:180px;
+    >dl:first-child{
+        margin-bottom:15px;
+    }
+    >dl{
+        >dt{
+            position:relative;
+        }
+        dd{
+            background: #F2F2F2;
+            height:35px;
+            line-height:35px;
+            padding-left:10px;
+        }
+    }
+}
+
+//动漫单个图片
+.cartoon-pic-1{
+    >dt{
+        height:252px;
+        width:380px;
+        position:relative;
+        img{
+            height:100%;
+            width:100%;
+        }
+    }
+    dd{
+        background: #F2F2F2;
+        height:35px;
+        line-height:35px;
+        padding-left:10px;
+    }
+}
+
+//7个图片连排的css
+.pic-7{
+    margin-top:20px;
+    >dl{
+        margin-right:20px;
+        float:left;
+        >dt{
+            position:relative;
+        }
+        >dt{
+            width:180px;
+            height:101px;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        >dd{
+            background: #F2F2F2;
+            padding: 8px 5px;
+            >p:first-child{
+                margin-bottom:5px;
+                span{
+                    color:#699F00;
+                    padding:2.5px;
+                    border:1px solid #ddd;
+                    background:#fff;
+                }
+            }
+            >p:last-child{
+                color:#000;
+            }
+        }
+    }
+
+    >dl:last-child{
+        margin-right:0;
+    }
+}
+
+//大幅广告
+.ad-big{
+    margin:50px 0;
+}
+
+//--自制--小图标
+.byself{
+    position:absolute;
+    right:0;
+    top:0;
+    width:40px;
+    height:40px;
+    background:url(../../img/icon/site-icons-qyIndex.png) -102px -1200px;
+}
+
+//today图标
+.today{
+    position:absolute;
+    left:0;
+    top:0;
+    width:125px;
+    height:45px;
+    background:url(../../img/icon/icon-today.png);
+}
+
+//--独播--小图标
+.only-play{
+    position:absolute;
+    right:0;
+    top:0;
+    width:39px;
+    height:39px;
+    background:url(../../img/icon/site-icons-qyIndex.png) -83px -530px;
+}
+
+//--1008p--小图标
+.p-1080{
+    position:absolute;
+    left:5px;
+    bottom:5px;
+    background:#000;
+    opacity:0.8;
+    color:#fff;
+    font-size:10px;
+    padding:0 5px;
+    >span:last-child{
+        vertical-align:top;
+        line-height:10px;
+    }
+}
+
+//第几期
+.stage{
+    position:absolute;
+    right:5px;
+    bottom:5px;
+    background:#000;
+    opacity:0.8;
+    color:#fff;
+    font-size:10px;
+    padding:0 5px;
+}
+
+//VIP小图标
+.vip{
+    position:absolute;
+    left:5px;
+    top:5px;
+    width:34px;
+    height:17px;
+    background:url(../../img/icon/site-icons-markV1.png);
+}
+
+//用劵小图标
+.pay{
+    width:34px;
+    height:17px;
+    background:url(../../img/icon/site-icons-markV1.png) -80px 0;
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+
+//小人小图标
+.person{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background:url(../../img/icon/site-icons-qyIndex.png) -50px -770px;
+}
+
+//向上的箭头
+.arrow-up{
+    margin-top:5.5px;
+    width:7px;
+    height:8px;
+    background:url(../../img/icon/site-icons-qyIndex.png) 0 -769px;
+}
+
+//向下的箭头
+.arrow-down{
+    margin-top:5.5px;
+    width:7px;
+    height:8px;
+    background:url(../../img/icon/site-icons-qyIndex.png) -17px -769px;
+}
+
+//水平不动横线
+.little-line{
+    float:right;
+    width:8px;
+    height:2px;
+    background:@color-core;
+    margin-top:9px;
+}
+
+//专题
+.special-object{
+    position:absolute;
+    right:0;
+    top:0;
+    background:@color-core;
+    padding:4px 8px;
+    color:#fff;
+}
+
+//内容的css
+//综艺
+#variety{
+    //轮播图
+    .banner_img{
+        width:760px;
+        position:absolute;
+        left:0;
+        top:0;
+        >div{
+            float:left;
+        }
+    }
+    //左边
+    >.left{
+        .variety-core;
+        //轮播css
+        dt.banner{
+            width:380px;
+            position:relative;
+            height:325px;
+            >div{
+                width:380px;
+                overflow:hidden;
+                height:325px;
+                position:absolute;
+                >div.words_list{
+                    position:absolute;
+                    bottom:0;
+                    background:#F2F2F2;
+                    width:100%;
+                    height:55px;
+                    >p{
+                        opacity:0;
+                        transition:all 0.3s linear;
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        height:55px;
+                        line-height:55px;
+                        padding-left:15px;
+                        >span{
+                            display:block;
+                            height:27.5px;
+                            line-height:27.5px;
+                        }
+                        >span:nth-child(2){
+                            color: #999999;
+                        }
+                    }
+                    .visible{
+                        opacity:1;
+                    }
+                }
+            }
+        }
+    }
+    >.right{
+        //标题部分
+        >.title{
+           .variety-right-title;
+        }
+        //主体部分
+        >.body{
+            margin-top:20px;
+            >.words{
+                background:#F2F2F2;
+                padding:0 5px;
+                >p{
+                    padding:10px  0 10px 5px;
+                    border-bottom:1px dotted #ddd;
+                }
+                >ul{
+                    padding-bottom:10px;
+                    >li{
+                        padding-left:5px;
+                        margin:13px 0;
+                        >b{
+                            margin-right:5px;
+                            display:inline-block;
+                            vertical-align:middle;
+                            width:5px;
+                            height:5px;
+                            background:url(../../img/icon/site-icons-qyIndex.png) -100px -1600px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//自制综艺
+#variety-byself{
+    margin-top:10px;
+    //主体
+    >.body{
+       .pic-7
+    }
+
+}
+
+//脱口秀
+#talk-show{
+    margin-top:20px;
+    >.body{
+        >dl{
+            float:left;
+            >dt{
+                width:180px;
+                height:101px;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            dd{
+                p:last-child{
+                    color:#999999;
+                }
+            }
+        }
+    }
+}
+
+//娱乐
+#entertainment{
+    >.left{
+        >.body{
+            >.lf{
+                margin-right:0;
+            }
+            >.rf{
+                width:1000px;
+                >dl{
+                    margin-left:20px;
+                }
+            }
+        }
+
+    }
+}
+
+//猜你喜欢
+#like{
+    .body{
+        >div:last-child{
+            >dl:last-child{
+                background:@color-core;
+                width:180px;
+                height:160px;
+                line-height:160px;
+                font-size:20px;
+                color:#fff;
+                text-align:center;
+            }
+        }
+    }
+}
+
+//推广广告
+.ad-scroll{//可视区域
+    margin:50px 0;
+    .border{
+        overflow:hidden;
+        position:relative;
+        border:1px solid @color-core;
+        padding:15px 34px;
+        //前一页，后一页
+        >.ad-previous{
+            position:absolute;
+            width:15px;
+            height:26px;
+            background:url(../../img/icon/arrow-left.png);
+            top:50%;
+            margin-top:-13px;
+            left:10px;
+            cursor:pointer;
+        }
+        >.ad-next{
+            cursor:pointer;
+            position:absolute;
+            width:15px;
+            height:26px;
+            right:10px;
+            top:50%;
+            margin-top:-13px;
+            background:url(../../img/icon/arrow-right.png);
+        }
+        .visible{
+            overflow:hidden;
+            >.img{//轮播图
+                width:2200px;
+                min-height:100px;
+                //图片可视区
+                .pic-visible {
+                    float: left;
+                    position:relative;
+                    overflow: hidden;
+                    width: 170px;
+                    height: 140px;
+                    transition: all 0.7s cubic-bezier(.46, .98, .54, 1.1);
+                    cursor: pointer;
+                    margin-right: 20px;
+                    .pic-arrange{
+                        width:930px;
+                        position:absolute;
+                        left:0;
+                        top:0;
+                    }
+                    .pic-arrange-last{
+                        width:930px;
+                        position:absolute;
+                        right:0;
+                        top:0;
+                    }
+                }
+                >.pic-visible:last-child{
+                    margin-right:0;
+                }
+                //可视区
+                .pic-hover{
+                    width:930px;
+                }
+            }
+        }
+
+    }
+    .two{
+        height:140px;
+        width:170px;
+    }
+    .big{
+       margin-left:20px;
+       opacity:0;
+        transition:all 0.7s cubic-bezier(.46,.98,.54,1.1);
+    }
+    .big-hover{
+        opacity:1;
+
+    }
+    //最后两张大图
+    .big-right{
+        margin-right:20px;
+        opacity:0;
+        transition:all 0.7s cubic-bezier(.46,.98,.54,1.1);
+    }
+    .hover{
+        width:930px;
+    }
+    >.words{
+        font-size:12px;
+        background:@color-core;
+        color:#fff;
+        padding:5px 20px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        width:88px;
+    }
+
+}
+
+//电影
+#movie{
+    .movie;
+}
+
+//网络电影
+#network-movie{
+    >.left{
+        margin-right:20px;
+    }
+    .variety-title{
+        border-bottom:1px solid #ddd;
+    }
+}
+
+//电视剧
+#tv{
+    >.right{
+        >.variety-right-title{
+            a{
+                span:last-child{
+                    margin-left:6px;
+                }
+            }
+        }
+        >.body{
+            ul{
+                li+li{
+                    margin-top:17px;
+                }
+            }
+            >dl{
+                margin-top:20px;
+            }
+        }
+
+    }
+}
+
+//动漫
+#cartoon{
+    >.left{
+        >.body{
+            margin-top:20px;
+            >dl{
+                margin-right:20px;
+            }
+        }
+    }
+    >.center{
+        margin-left:20px;
+        ul{
+            margin-left:25px;
+            margin-top:10px;
+        }
+    }
+    >.right{
+        margin-left:20px;
+        ul{
+            margin-left:15px;
+            >li{
+                margin-right:6px;
+            }
+        }
+    }
+}
+
+//体育
+#physical{
+    margin-top:30px;
+    >.sport{
+        ul{
+            margin-left:15px;
+            >li{
+                margin-right:6px;
+            }
+        }
+    }
+    >.music,.fashion{
+        margin-left:20px;
+        >.body{
+            margin-top:20px;
+            >dl{
+                margin-right:20px;
+                dt{
+                    width:180px;
+                    height:252px;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+            }
+        }
+    }
+    >.fashion{
+        .cartoon-pic-4{
+            margin-top:0;
+        }
+    }
+}
+
+//杂烩
+#mixed{
+    margin-top:30px;
+    .floor{
+        >div:nth-child(2){
+            margin:0 20px;
+        }
+    }
+}
+
+//原创
+#original{
+    //左边
+    >.left{
+        .variety-core;
+        .cooperation{
+            margin-top:16px;
+        }
+    }
+    >.right{
+        //标题部分
+        >.title{
+            .variety-right-title;
+        }
+        //主体部分
+        >.body{
+            margin-top:20px;
+            >.words{
+                background:#F2F2F2;
+                padding:10px 0 10px 10px;
+                //楼层
+                >div{
+                    margin-bottom:15px;
+                    >.left{
+                        width:65px;
+                        height:65px;
+                        margin-right:10px;
+                        >img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                    >.right{
+                        p{
+                            color:#999999;
+                            margin:3px 0;
+                            font-size:12px;
+                        }
+                        button{
+                            background:@color-core;
+                            color:#fff;
+                            border:1px solid transparent;
+                            padding:3px 15px;
+                            outline:none;
+                        }
+                        .button_color{
+                            border:1px solid #36FC08;
+                        }
+                    }
+                }
+                >div:last-child{
+                    margin-bottom:0;
+                }
+            }
+        }
+    }
+}
+
+//搞笑
+#funny{
+    >div:last-child{
+        margin-left:20px;
+        .cartoon-pic-3{
+            width:780px;
+            >dl:last-child{
+                margin-left:20px;
+            }
+        }
+
+    }
+}
+
+//游戏
+#game{
+    >div:last-child{
+        margin-left:20px;
+        .cartoon-pic-3{
+            width:780px;
+            >dl:last-child{
+                margin-left:20px;
+            }
+        }
+
+    }
+}
+
+//频道
+#pindao{
+    margin-top:30px;
+    dl{
+        margin-right:20px;
+        float:left;
+        dt{
+            position:relative;
+            >div{
+                position:absolute;
+                bottom:0;
+                left:0;
+                background:#000;
+                opacity:0.5;
+                padding:3px 0 3px 5px;
+                color:#fff;
+                width:100%;
+            }
+        }
+        dd{
+            padding:3px 10px;
+            background:#8AC024;
+            color:#fff;
+            border-bottom:5px solid #6BA400;
+            span:first-child{
+                color:#fff;
+                font-size:20px;
+                font-weight:normal;
+            }
+
+        }
+    }
+    dl:last-child{
+        margin-right:0;
+    }
+}
+
+//合作伙伴
+#partner{
+    border:1px solid #ddd;
+    p.title{
+        margin-bottom:15px;
+        span:first-child{
+            font-size:22px;
+            margin-right:15px;
+        }
+    }
+    .left{
+        border-right:1px solid #ddd;
+        width:720px;
+        padding:15px 20px;
+        background:#F7F7F7;
+        >div{
+            width:84px;
+            float:left;
+            >p+p{
+                margin-top:10px;
+                margin-bottom:0;
+            }
+        }
+    }
+    .right{
+        padding:15px 20px;
+        background:#F7F7F7;
+        width:658px;
+        >div{
+            margin-right:10px;
+            float:left;
+            >p+p{
+                margin-top:10px;
+                margin-bottom:0;
+            }
+        }
+    }
+}
+
+//尾部
+#footer{
+    padding:20px 0 30px 0;
+    margin-top:40px;
+    border-top:1px solid #ddd;
+    >.container{
+        //最上面的列表
+        >.list{
+            >div{
+                float:left;
+                p+p{
+                    margin-top:10px;
+                }
+            }
+            >div+div{
+                margin-left:139px;
+            }
+            >div:nth-child(2){
+                span{
+                    display:inline-block;
+                    width:16px;
+                    height:16px;
+                    vertical-align:middle;
+                }
+                >p:first-child{
+                    span{
+                        background:url(../../img/iqiyi/trust.png);
+                    }
+                }
+                >p:last-child{
+                    span{
+                        background:url(../../img/iqiyi/records.png);
+                    }
+                }
+            }
+            >p{
+                margin-top:10px;
+            }
+        }
+        >p{
+            margin-top:10px;
+        }
+        >ul{
+            margin-top:25px;
+            margin-left:110px;
+            text-align:center;
+            >b{
+                float:left;
+                height:13.5px;
+                margin-top:3.2px;
+                width:1px;
+                background:#000;
+            }
+            li{
+                float:left;
+                margin:0 20px;
+            }
+
+        }
+    }
+}

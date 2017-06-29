@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/play.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/default.css">
+</head>
+<body>
+<div id="header"></div>
+<!--最外层的容器-->
+<div id="play">
+    <!--第二层容器-->
+    <div class="out_container">
+        <!--视频和列表容器-->
+        <div class="inner-container">
+            <!--播放视频的容器-->
+            <div id="debugger">
+                <div id="w-main" class="debugger-window">
+                    <div id="player-unit">
+                        <div class="cf"></div>
+                        <!--视频容器-->
+                        <div class="m20 abp" id="player">
+                            <div id="c-region" style="display:none;">640x480</div>
+                            <div id="commentCanvas" class="container"></div>
+                            <video id="abpVideo" autobuffer="true" data-setup="{}" width="100%" height="100%" style="z-index:-1;width:100%;height:100%;top:0;left:0;right:0;bottom:0;" preload="auto" controls autoplay>
+                                <source src="../video/birds.mp4">
+                                <p class="warning">Your browser does not support HTML5 video.</p>
+                            </video>
+                        </div>
+                    </div>
+                    <!--显示弹幕-->
+                    <div id="w-code" class="debugger-window" style="display:none;padding:30px;">
+                        <div style="position:absolute; right:10px; top:15px; bottom:0; width:45%">
+                            <h2>Debug Output</h2>
+                            <div id="debugger-output" class="debug-out" style="margin:10px;">
+                            </div>
+                        </div>
+                        <div class="iw" style="position:absolute; left:10px; top:15px; bottom:0; width:45%">
+                            <h2>Input Window</h2>
+                            <div id="debugger-input" style="padding:10px;">
+                                <div id="debugger-input-area"class="input" contenteditable="true">
+
+                                </div>
+                                <div id="debugger-run" class="button">Run</div>
+                            </div>
+                            <p>Filters:</p>
+                            <div id="preset-1-run" class="button">Filter pool = 0</div>
+                            <div id="preset-2-run" class="button">Niconico Clickable</div>
+                            <div id="preset-3-run" class="button">Debug Mode with borders</div>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+            <!--旁边待播放的视频列表-->
+            <div id="v_list">
+                <div class="list_pa">
+                    <div class="list_container"></div>
+                </div>
+            </div>
+        </div>
+        <!--发弹幕-->
+        <div class="controls">
+            <div>弹幕</div>
+            <div class="switch off">
+
+            </div>
+            <div class="set">
+                <div class="color">颜色</div>
+                <div id="color_select" style="display: none">
+                    <ul>
+                        <li>
+                            <div class="color_1"></div>
+                        </li>
+                        <li>
+                            <div class="color_2"></div>
+                        </li>
+                        <li>
+                            <div class="color_3"></div>
+                        </li>
+                        <li>
+                            <div class="color_4"></div>
+                        </li>
+                        <li>
+                            <div class="color_5"></div>
+                        </li>
+                        <li>
+                            <div class="color_6"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="send">
+                <input type="text" id="main" value="" placeholder="发弹幕"/><input type="button" id="send" value="发送">
+            </div>
+        </div>
+        <!--描述容器-->
+        <div class="description">
+
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="foot"></div>
+</body>
+
+<script src="../js/socket.io.js"></script>
+<script src="../js/CommentCoreLibrary.js"></script>
+<script src="../js/debugger.js"></script>
+<!--<script src="../js/jquery-1.11.3.js"></script>-->
+<script src="../js/play.js"></script>
+</html>
